@@ -1,0 +1,72 @@
+================================================================================
+API BREAKPOINTS QUICK REFERENCE
+================================================================================
+Use this file to quickly copy-paste class names and line numbers for setting
+breakpoints manually in the UI.
+
+================================================================================
+GET /api/users - Get All Users
+================================================================================
+Breakpoint 1: com.jdwp.server.controller.UserController | Line 31
+Breakpoint 2: com.jdwp.server.service.UserService | Line 64
+Breakpoint 3: com.jdwp.server.service.UserService | Line 81
+
+================================================================================
+GET /api/users/{id} - Get User by ID
+================================================================================
+Breakpoint 1: com.jdwp.server.controller.UserController | Line 50
+Breakpoint 2: com.jdwp.server.service.UserService | Line 81
+Breakpoint 3: com.jdwp.server.service.UserService | Line 95
+
+================================================================================
+POST /api/users - Create New User
+================================================================================
+Breakpoint 1: com.jdwp.server.controller.UserController | Line 77
+Breakpoint 2: com.jdwp.server.service.UserService | Line 105
+Breakpoint 3: com.jdwp.server.service.UserService | Line 135
+
+================================================================================
+PUT /api/users/{id} - Update User
+================================================================================
+Breakpoint 1: com.jdwp.server.controller.UserController | Line 101
+Breakpoint 2: com.jdwp.server.service.UserService | Line 135
+Breakpoint 3: com.jdwp.server.service.UserService | Line 165
+
+================================================================================
+DELETE /api/users/{id} - Delete User
+================================================================================
+Breakpoint 1: com.jdwp.server.controller.UserController | Line 124
+Breakpoint 2: com.jdwp.server.service.UserService | Line 174
+Breakpoint 3: com.jdwp.server.service.UserService | Line 190
+
+================================================================================
+HOW TO USE:
+================================================================================
+1. In the UI, go to "Breakpoints" panel
+2. Use the dropdown to select an API (e.g., "GET /api/users")
+3. Click "Set All Breakpoints" to set all 3 breakpoints at once
+   
+   OR
+   
+4. Use "Add Single Breakpoint" section
+5. Copy class name and line number from above
+6. Paste and click "Add Breakpoint"
+
+================================================================================
+DEBUGGING FEATURES AVAILABLE WHEN THREAD IS SUSPENDED:
+================================================================================
+- Step Over: Execute current line, move to next
+- Step Into: Step into method calls
+- Step Out: Step out of current method
+- Continue: Resume until next breakpoint
+- Scope Variables: Automatically loaded when breakpoint hits
+- Evaluate Expression: Evaluate variables/expressions in current scope
+- Current Source Location: Shows class, method, line number
+- Refresh: Reload variables and location
+
+To suspend a thread manually:
+1. Click on a thread in the "Threads" list
+2. Click "⏸ Suspend" button
+3. All debug features become available immediately
+
+================================================================================

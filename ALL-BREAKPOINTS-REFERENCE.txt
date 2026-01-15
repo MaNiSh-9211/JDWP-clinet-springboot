@@ -1,0 +1,420 @@
+================================================================================
+COMPLETE BREAKPOINTS REFERENCE - ALL LINE NUMBERS FOR ALL APIs
+================================================================================
+This file contains ALL possible breakpoint locations for every API endpoint.
+You can copy-paste any class name and line number to set breakpoints manually.
+
+================================================================================
+API: GET /api/users
+Method: getAllUsers()
+Description: Get all users from the database
+================================================================================
+
+CONTROLLER - UserController.java
+---------------------------------
+Class: com.jdwp.server.controller.UserController
+
+Line 22: @GetMapping annotation
+Line 23: public ResponseEntity<List<User>> getAllUsers() {
+Line 24: logger.info("========================================");
+Line 25: logger.info("[REQUEST RECEIVED] GET /api/users");
+Line 26: logger.info("========================================");
+Line 27: logger.info("[CONTROL ENTERED] UserController.getAllUsers() - Line 19");
+Line 29: // BREAKPOINT: Set breakpoint here (line 19) to debug getAllUsers
+Line 30: logger.info("[DEBUG] About to call userService.getAllUsers()");
+Line 31: List<User> users = userService.getAllUsers();  ⭐ RECOMMENDED
+Line 32: logger.info("[DEBUG] Received users from service. Count: {}", users != null ? users.size() : 0);
+Line 33: logger.info("[DEBUG] Users list: {}", users);
+Line 35: logger.info("[RESPONSE SENT] GET /api/users - Status: 200 OK, Users count: {}", users != null ? users.size() : 0);
+Line 36: logger.info("========================================");
+Line 37: return ResponseEntity.ok(users);  ⭐ RECOMMENDED
+
+SERVICE - UserService.java
+---------------------------
+Class: com.jdwp.server.service.UserService
+
+Line 59: public List<User> getAllUsers() {
+Line 60: logger.info("[SERVICE] UserService.getAllUsers() - Line 55 - CONTROL ENTERED");
+Line 61: // BREAKPOINT: Set breakpoint here (line 55) to debug getAllUsers in service
+Line 62: try {
+Line 63: logger.info("[SERVICE] Loading users from file...");
+Line 64: List<User> users = loadUsersFromFile();  ⭐ RECOMMENDED
+Line 65: logger.info("[SERVICE] Loaded {} users from file", users.size());
+Line 66: logger.info("[SERVICE] Users: {}", users);
+Line 67: logger.info("[SERVICE] UserService.getAllUsers() - RETURNING {} users", users.size());
+Line 68: return users;  ⭐ RECOMMENDED
+Line 69: } catch (Exception e) {
+Line 70: logger.error("[SERVICE] Error loading users: {}", e.getMessage(), e);
+Line 71: System.err.println("Error loading users: " + e.getMessage());
+Line 72: return new ArrayList<>();
+
+================================================================================
+API: GET /api/users/{id}
+Method: getUserById(@PathVariable Long id)
+Description: Get a specific user by ID
+================================================================================
+
+CONTROLLER - UserController.java
+---------------------------------
+Class: com.jdwp.server.controller.UserController
+
+Line 40: @GetMapping("/{id}")
+Line 41: public ResponseEntity<User> getUserById(@PathVariable Long id) {
+Line 42: logger.info("========================================");
+Line 43: logger.info("[REQUEST RECEIVED] GET /api/users/{}", id);
+Line 44: logger.info("========================================");
+Line 45: logger.info("[CONTROL ENTERED] UserController.getUserById() - Line 26");
+Line 46: logger.info("[DEBUG] Parameter id = {}", id);
+Line 48: // BREAKPOINT: Set breakpoint here (line 25) to debug getUserById
+Line 49: logger.info("[DEBUG] About to call userService.getUserById({})", id);
+Line 50: User user = userService.getUserById(id);  ⭐ RECOMMENDED
+Line 51: logger.info("[DEBUG] Received user from service: {}", user);
+Line 53: if (user != null) {
+Line 54: logger.info("[RESPONSE SENT] GET /api/users/{} - Status: 200 OK, User: {}", id, user);
+Line 55: logger.info("========================================");
+Line 56: return ResponseEntity.ok(user);  ⭐ RECOMMENDED
+Line 57: }
+Line 58: logger.info("[RESPONSE SENT] GET /api/users/{} - Status: 404 NOT FOUND", id);
+Line 59: logger.info("========================================");
+Line 60: return ResponseEntity.notFound().build();  ⭐ RECOMMENDED
+
+SERVICE - UserService.java
+---------------------------
+Class: com.jdwp.server.service.UserService
+
+Line 76: public User getUserById(Long id) {
+Line 77: logger.info("[SERVICE] UserService.getUserById() - Line 65 - CONTROL ENTERED");
+Line 78: logger.info("[SERVICE] Parameter id = {}", id);
+Line 79: // BREAKPOINT: Set breakpoint here to debug getUserById
+Line 80: logger.info("[SERVICE] Calling getAllUsers() to get all users...");
+Line 81: List<User> users = getAllUsers();  ⭐ RECOMMENDED
+Line 82: logger.info("[SERVICE] Got {} users, searching for id = {}", users.size(), id);
+Line 83: User foundUser = users.stream()
+Line 84: .filter(user -> user.getId().equals(id))
+Line 85: .findFirst()
+Line 86: .orElse(null);
+Line 87: logger.info("[SERVICE] Found user: {}", foundUser);
+Line 88: logger.info("[SERVICE] UserService.getUserById({}) - RETURNING {}", id, foundUser);
+Line 89: return foundUser;  ⭐ RECOMMENDED
+
+================================================================================
+API: POST /api/users
+Method: createUser(@RequestBody User user)
+Description: Create a new user
+================================================================================
+
+CONTROLLER - UserController.java
+---------------------------------
+Class: com.jdwp.server.controller.UserController
+
+Line 63: @PostMapping
+Line 64: public ResponseEntity<User> createUser(@RequestBody User user) {
+Line 65: logger.info("========================================");
+Line 66: logger.info("[REQUEST RECEIVED] POST /api/users");
+Line 67: logger.info("========================================");
+Line 68: logger.info("[CONTROL ENTERED] UserController.createUser() - Line 36");
+Line 69: logger.info("[DEBUG] Request body user = {}", user);
+Line 70: logger.info("[DEBUG] User details - Name: {}, Email: {}, Age: {}", 
+Line 71: user != null ? user.getName() : "null",
+Line 72: user != null ? user.getEmail() : "null",
+Line 73: user != null ? user.getAge() : "null");
+Line 75: // BREAKPOINT: Set breakpoint here (line 34) to debug createUser
+Line 76: logger.info("[DEBUG] About to call userService.createUser({})", user);
+Line 77: User createdUser = userService.createUser(user);  ⭐ RECOMMENDED
+Line 78: logger.info("[DEBUG] Created user from service: {}", createdUser);
+Line 79: logger.info("[DEBUG] Created user ID: {}", createdUser != null ? createdUser.getId() : "null");
+Line 81: logger.info("[DEBUG] RESPONSE SENT] POST /api/users - Status: 200 OK, Created User: {}", createdUser);
+Line 82: logger.info("========================================");
+Line 83: return ResponseEntity.ok(createdUser);  ⭐ RECOMMENDED
+
+SERVICE - UserService.java
+---------------------------
+Class: com.jdwp.server.service.UserService
+
+Line 92: public User createUser(User user) {
+Line 93: logger.info("[SERVICE] UserService.createUser() - Line 74 - CONTROL ENTERED");
+Line 94: logger.info("[SERVICE] Parameter user = {}", user);
+Line 95: logger.info("[SERVICE] User details - Name: {}, Email: {}, Age: {}", 
+Line 96: user != null ? user.getName() : "null",
+Line 97: user != null ? user.getEmail() : "null",
+Line 98: user != null ? user.getAge() : "null");
+Line 99: // BREAKPOINT: Set breakpoint here to debug createUser
+Line 100: try {
+Line 101: logger.info("[SERVICE] Getting all existing users...");
+Line 102: List<User> users = getAllUsers();  ⭐ RECOMMENDED
+Line 103: logger.info("[SERVICE] Current users count: {}", users.size());
+Line 104: logger.info("[SERVICE] Next ID will be: {}", nextId.get());
+Line 105: user.setId(nextId.getAndIncrement());  ⭐ RECOMMENDED
+Line 106: logger.info("[SERVICE] Assigned ID {} to new user", user.getId());
+Line 107: users.add(user);
+Line 108: logger.info("[SERVICE] Added user to list. New count: {}", users.size());
+Line 109: logger.info("[SERVICE] Saving users to file...");
+Line 110: saveUsersToFile(users);  ⭐ RECOMMENDED
+Line 111: logger.info("[SERVICE] Users saved to file successfully");
+Line 112: logger.info("[SERVICE] UserService.createUser() - RETURNING {}", user);
+Line 113: return user;  ⭐ RECOMMENDED
+Line 114: } catch (Exception e) {
+Line 115: logger.error("[SERVICE] Error creating user: {}", e.getMessage(), e);
+Line 116: System.err.println("Error creating user: " + e.getMessage());
+Line 117: throw new RuntimeException("Failed to create user", e);
+
+================================================================================
+API: PUT /api/users/{id}
+Method: updateUser(@PathVariable Long id, @RequestBody User user)
+Description: Update an existing user
+================================================================================
+
+CONTROLLER - UserController.java
+---------------------------------
+Class: com.jdwp.server.controller.UserController
+
+Line 86: @PutMapping("/{id}")
+Line 87: public ResponseEntity<User> updateUser(@PathVariable Long id, @RequestBody User user) {
+Line 88: logger.info("========================================");
+Line 89: logger.info("[REQUEST RECEIVED] PUT /api/users/{}", id);
+Line 90: logger.info("========================================");
+Line 91: logger.info("[CONTROL ENTERED] UserController.updateUser() - Line 43");
+Line 92: logger.info("[DEBUG] Parameter id = {}", id);
+Line 93: logger.info("[DEBUG] Request body user = {}", user);
+Line 94: logger.info("[DEBUG] User details - Name: {}, Email: {}, Age: {}", 
+Line 95: user != null ? user.getName() : "null",
+Line 96: user != null ? user.getEmail() : "null",
+Line 97: user != null ? user.getAge() : "null");
+Line 99: // BREAKPOINT: Set breakpoint here (line 41) to debug updateUser
+Line 100: logger.info("[DEBUG] About to call userService.updateUser({}, {})", id, user);
+Line 101: User updatedUser = userService.updateUser(id, user);  ⭐ RECOMMENDED
+Line 102: logger.info("[DEBUG] Updated user from service: {}", updatedUser);
+Line 104: if (updatedUser != null) {
+Line 105: logger.info("[RESPONSE SENT] PUT /api/users/{} - Status: 200 OK, Updated User: {}", id, updatedUser);
+Line 106: logger.info("========================================");
+Line 107: return ResponseEntity.ok(updatedUser);  ⭐ RECOMMENDED
+Line 108: }
+Line 109: logger.info("[RESPONSE SENT] PUT /api/users/{} - Status: 404 NOT FOUND", id);
+Line 110: logger.info("========================================");
+Line 111: return ResponseEntity.notFound().build();  ⭐ RECOMMENDED
+
+SERVICE - UserService.java
+---------------------------
+Class: com.jdwp.server.service.UserService
+
+Line 121: public User updateUser(Long id, User updatedUser) {
+Line 122: logger.info("[SERVICE] UserService.updateUser() - Line 88 - CONTROL ENTERED");
+Line 123: logger.info("[SERVICE] Parameter id = {}", id);
+Line 124: logger.info("[SERVICE] Parameter updatedUser = {}", updatedUser);
+Line 125: logger.info("[SERVICE] Updated user details - Name: {}, Email: {}, Age: {}", 
+Line 126: updatedUser != null ? updatedUser.getName() : "null",
+Line 127: updatedUser != null ? updatedUser.getEmail() : "null",
+Line 128: updatedUser != null ? updatedUser.getAge() : "null");
+Line 129: // BREAKPOINT: Set breakpoint here to debug updateUser
+Line 130: try {
+Line 131: logger.info("[SERVICE] Getting all existing users...");
+Line 132: List<User> users = getAllUsers();  ⭐ RECOMMENDED
+Line 133: logger.info("[SERVICE] Current users count: {}", users.size());
+Line 134: logger.info("[SERVICE] Searching for user with id = {}", id);
+Line 135: Optional<User> userOpt = users.stream()  ⭐ RECOMMENDED
+Line 136: .filter(user -> user.getId().equals(id))
+Line 137: .findFirst();
+Line 139: if (userOpt.isPresent()) {
+Line 140: User existingUser = userOpt.get();
+Line 141: logger.info("[SERVICE] Found existing user: {}", existingUser);
+Line 142: logger.info("[SERVICE] Updating user fields...");
+Line 143: existingUser.setName(updatedUser.getName());  ⭐ RECOMMENDED
+Line 144: logger.info("[SERVICE] Updated name: {}", existingUser.getName());
+Line 145: existingUser.setEmail(updatedUser.getEmail());  ⭐ RECOMMENDED
+Line 146: logger.info("[SERVICE] Updated email: {}", existingUser.getEmail());
+Line 147: existingUser.setAge(updatedUser.getAge());  ⭐ RECOMMENDED
+Line 148: logger.info("[SERVICE] Updated age: {}", existingUser.getAge());
+Line 149: logger.info("[SERVICE] Saving updated users to file...");
+Line 150: saveUsersToFile(users);  ⭐ RECOMMENDED
+Line 151: logger.info("[SERVICE] Users saved to file successfully");
+Line 152: logger.info("[SERVICE] UserService.updateUser({}) - RETURNING {}", id, existingUser);
+Line 153: return existingUser;  ⭐ RECOMMENDED
+Line 154: }
+Line 155: logger.info("[SERVICE] User with id {} not found", id);
+Line 156: logger.info("[SERVICE] UserService.updateUser({}) - RETURNING null", id);
+Line 157: return null;  ⭐ RECOMMENDED
+
+================================================================================
+API: DELETE /api/users/{id}
+Method: deleteUser(@PathVariable Long id)
+Description: Delete a user by ID
+================================================================================
+
+CONTROLLER - UserController.java
+---------------------------------
+Class: com.jdwp.server.controller.UserController
+
+Line 114: @DeleteMapping("/{id}")
+Line 115: public ResponseEntity<Void> deleteUser(@PathVariable Long id) {
+Line 116: logger.info("========================================");
+Line 117: logger.info("[REQUEST RECEIVED] DELETE /api/users/{}", id);
+Line 118: logger.info("========================================");
+Line 119: logger.info("[CONTROL ENTERED] UserController.deleteUser() - Line 53");
+Line 120: logger.info("[DEBUG] Parameter id = {}", id);
+Line 122: // BREAKPOINT: Set breakpoint here (line 51) to debug deleteUser
+Line 123: logger.info("[DEBUG] About to call userService.deleteUser({})", id);
+Line 124: boolean deleted = userService.deleteUser(id);  ⭐ RECOMMENDED
+Line 125: logger.info("[DEBUG] Delete result from service: {}", deleted);
+Line 127: if (deleted) {
+Line 128: logger.info("[RESPONSE SENT] DELETE /api/users/{} - Status: 204 NO CONTENT", id);
+Line 129: logger.info("========================================");
+Line 130: return ResponseEntity.noContent().build();  ⭐ RECOMMENDED
+Line 131: }
+Line 132: logger.info("[RESPONSE SENT] DELETE /api/users/{} - Status: 404 NOT FOUND", id);
+Line 133: logger.info("========================================");
+Line 134: return ResponseEntity.notFound().build();  ⭐ RECOMMENDED
+
+SERVICE - UserService.java
+---------------------------
+Class: com.jdwp.server.service.UserService
+
+Line 165: public boolean deleteUser(Long id) {
+Line 166: logger.info("[SERVICE] UserService.deleteUser() - Line 111 - CONTROL ENTERED");
+Line 167: logger.info("[SERVICE] Parameter id = {}", id);
+Line 168: // BREAKPOINT: Set breakpoint here to debug deleteUser
+Line 169: try {
+Line 170: logger.info("[SERVICE] Getting all existing users...");
+Line 171: List<User> users = getAllUsers();  ⭐ RECOMMENDED
+Line 172: logger.info("[SERVICE] Current users count: {}", users.size());
+Line 173: logger.info("[SERVICE] Attempting to remove user with id = {}", id);
+Line 174: boolean removed = users.removeIf(user -> user.getId().equals(id));  ⭐ RECOMMENDED
+Line 175: logger.info("[SERVICE] Remove operation result: {}", removed);
+Line 176: if (removed) {
+Line 177: logger.info("[SERVICE] User removed. New count: {}", users.size());
+Line 178: logger.info("[SERVICE] Saving updated users to file...");
+Line 179: saveUsersToFile(users);  ⭐ RECOMMENDED
+Line 180: logger.info("[SERVICE] Users saved to file successfully");
+Line 181: } else {
+Line 182: logger.info("[SERVICE] User with id {} was not found, nothing to remove", id);
+Line 183: }
+Line 184: logger.info("[SERVICE] UserService.deleteUser({}) - RETURNING {}", id, removed);
+Line 185: return removed;  ⭐ RECOMMENDED
+
+================================================================================
+QUICK COPY-PASTE FORMAT
+================================================================================
+Copy these directly into the "Add Single Breakpoint" section in the UI:
+
+GET /api/users:
+com.jdwp.server.controller.UserController | 31
+com.jdwp.server.service.UserService | 64
+com.jdwp.server.service.UserService | 68
+
+GET /api/users/{id}:
+com.jdwp.server.controller.UserController | 50
+com.jdwp.server.service.UserService | 81
+com.jdwp.server.service.UserService | 89
+
+POST /api/users:
+com.jdwp.server.controller.UserController | 77
+com.jdwp.server.service.UserService | 102
+com.jdwp.server.service.UserService | 105
+com.jdwp.server.service.UserService | 110
+com.jdwp.server.service.UserService | 113
+
+PUT /api/users/{id}:
+com.jdwp.server.controller.UserController | 101
+com.jdwp.server.service.UserService | 132
+com.jdwp.server.service.UserService | 135
+com.jdwp.server.service.UserService | 143
+com.jdwp.server.service.UserService | 145
+com.jdwp.server.service.UserService | 147
+com.jdwp.server.service.UserService | 150
+com.jdwp.server.service.UserService | 153
+
+DELETE /api/users/{id}:
+com.jdwp.server.controller.UserController | 124
+com.jdwp.server.service.UserService | 171
+com.jdwp.server.service.UserService | 174
+com.jdwp.server.service.UserService | 179
+com.jdwp.server.service.UserService | 185
+
+================================================================================
+DEBUGGING FEATURES AVAILABLE AT ALL BREAKPOINTS
+================================================================================
+When execution stops at ANY breakpoint (or when you manually suspend a thread),
+you can use ALL of these features:
+
+1. STEP OVER (⏭)
+   - Executes the current line and moves to the next line
+   - Use when you want to skip over method calls
+   - Available at: ALL breakpoint locations
+
+2. STEP INTO (⬇)
+   - Steps into method calls on the current line
+   - Use when you want to debug inside a method
+   - Available at: ALL breakpoint locations
+
+3. STEP OUT (⬆)
+   - Steps out of the current method
+   - Use when you want to return to the caller
+   - Available at: ALL breakpoint locations
+
+4. CONTINUE (▶)
+   - Resumes execution until the next breakpoint
+   - Use when you want to continue running
+   - Available at: ALL breakpoint locations
+
+5. EVALUATE EXPRESSION (🔍)
+   - Evaluate any variable or expression in the current scope
+   - Examples:
+     * Variable name: "user"
+     * Field access: "user.name"
+     * Method call: "user.getName()"
+     * Complex: "users.size()"
+   - Available at: ALL breakpoint locations
+
+6. SCOPE VARIABLES (📊)
+   - Automatically loaded when breakpoint hits
+   - Shows all local variables, parameters, and fields
+   - Available at: ALL breakpoint locations
+
+7. CURRENT SOURCE LOCATION (📍)
+   - Shows exact class, method, and line number
+   - Available at: ALL breakpoint locations
+
+8. STACK FRAMES
+   - Shows the call stack
+   - Available at: ALL breakpoint locations
+
+================================================================================
+RECOMMENDED BREAKPOINT SETS FOR EACH API
+================================================================================
+
+For GET /api/users (3 breakpoints):
+1. com.jdwp.server.controller.UserController | 31
+2. com.jdwp.server.service.UserService | 64
+3. com.jdwp.server.service.UserService | 68
+
+For GET /api/users/{id} (3 breakpoints):
+1. com.jdwp.server.controller.UserController | 50
+2. com.jdwp.server.service.UserService | 81
+3. com.jdwp.server.service.UserService | 89
+
+For POST /api/users (5 breakpoints):
+1. com.jdwp.server.controller.UserController | 77
+2. com.jdwp.server.service.UserService | 102
+3. com.jdwp.server.service.UserService | 105
+4. com.jdwp.server.service.UserService | 110
+5. com.jdwp.server.service.UserService | 113
+
+For PUT /api/users/{id} (8 breakpoints):
+1. com.jdwp.server.controller.UserController | 101
+2. com.jdwp.server.service.UserService | 132
+3. com.jdwp.server.service.UserService | 135
+4. com.jdwp.server.service.UserService | 143
+5. com.jdwp.server.service.UserService | 145
+6. com.jdwp.server.service.UserService | 147
+7. com.jdwp.server.service.UserService | 150
+8. com.jdwp.server.service.UserService | 153
+
+For DELETE /api/users/{id} (5 breakpoints):
+1. com.jdwp.server.controller.UserController | 124
+2. com.jdwp.server.service.UserService | 171
+3. com.jdwp.server.service.UserService | 174
+4. com.jdwp.server.service.UserService | 179
+5. com.jdwp.server.service.UserService | 185
+
+================================================================================
+END OF REFERENCE
+================================================================================

@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  debug-server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: jdwp-debug-server
+    ports:
+      - "5005:5005"  # JDWP port
+      - "8081:8081"  # API port
+    volumes:
+      - ./server/data:/app/data  # Mount data directory for persistence
+    networks:
+      - jdwp-network
+    restart: unless-stopped
+
+networks:
+  jdwp-network:
+    driver: bridge

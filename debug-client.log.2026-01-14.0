@@ -1,0 +1,853 @@
+2026-01-14 01:10:12.363 [main] INFO  c.j.c.JdwpDebugClientApplication - Starting JdwpDebugClientApplication v1.0.0 using Java 21.0.4 with PID 3292 (C:\Users\at381\OneDrive\Desktop\JPDA-remote-debugging\client\target\debug-client-1.0.0.jar started by at381 in C:\Users\at381\OneDrive\Desktop\JPDA-remote-debugging)
+2026-01-14 01:10:12.365 [main] INFO  c.j.c.JdwpDebugClientApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-14 01:10:13.239 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-01-14 01:10:13.244 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-01-14 01:10:13.248 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-14 01:10:13.248 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-01-14 01:10:13.280 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-14 01:10:13.280 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 843 ms
+2026-01-14 01:10:13.561 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-01-14 01:10:13.610 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path ''
+2026-01-14 01:10:13.628 [main] INFO  c.j.c.JdwpDebugClientApplication - Started JdwpDebugClientApplication in 1.723 seconds (process running for 2.169)
+2026-01-14 01:11:22.045 [http-nio-8082-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-14 01:11:22.045 [http-nio-8082-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-14 01:11:22.048 [http-nio-8082-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-01-14 01:11:22.161 [http-nio-8082-exec-3] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:22.162 [http-nio-8082-exec-3] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Attempting to connect to JDWP server at localhost:5005
+2026-01-14 01:11:22.164 [http-nio-8082-exec-3] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:22.165 [http-nio-8082-exec-3] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Getting SocketAttach connector...
+2026-01-14 01:11:22.177 [http-nio-8082-exec-3] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Attaching to JDWP server...
+2026-01-14 01:11:22.205 [http-nio-8082-exec-3] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓✓✓ Successfully connected to JDWP server at localhost:5005
+2026-01-14 01:11:22.209 [http-nio-8082-exec-3] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] VM Description: Java Debug Interface (Reference Implementation) version 21.0 
+Java Debug Wire Protocol (Reference Implementation) version 21.0
+JVM Debug Interface version 21.0
+JVM version 21.0.9 (OpenJDK 64-Bit Server VM, mixed mode, sharing)
+2026-01-14 01:11:22.209 [http-nio-8082-exec-3] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:30.242 [http-nio-8082-exec-4] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:30.242 [http-nio-8082-exec-4] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Setting breakpoint at com.jdwp.server.controller.UserController:31
+2026-01-14 01:11:30.242 [http-nio-8082-exec-4] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:30.245 [http-nio-8082-exec-4] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Waiting for class com.jdwp.server.controller.UserController to be loaded...
+2026-01-14 01:11:30.281 [http-nio-8082-exec-4] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓ Class found (attempt 1)
+2026-01-14 01:11:30.282 [http-nio-8082-exec-4] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Looking for executable code at line 31...
+2026-01-14 01:11:30.324 [http-nio-8082-exec-4] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓ Found executable code at line 31
+2026-01-14 01:11:30.324 [http-nio-8082-exec-4] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Location details:
+2026-01-14 01:11:30.325 [http-nio-8082-exec-4] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Class: com.jdwp.server.controller.UserController
+2026-01-14 01:11:30.325 [http-nio-8082-exec-4] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Method: getAllUsers
+2026-01-14 01:11:30.325 [http-nio-8082-exec-4] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Line: 31 (requested: 31)
+2026-01-14 01:11:30.352 [http-nio-8082-exec-4] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓✓✓ BREAKPOINT SET SUCCESSFULLY
+2026-01-14 01:11:30.353 [http-nio-8082-exec-4] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Breakpoint ID: com.jdwp.server.controller.UserController:31
+2026-01-14 01:11:30.353 [http-nio-8082-exec-4] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Actual Location: com.jdwp.server.controller.UserController:getAllUsers:31
+2026-01-14 01:11:30.353 [http-nio-8082-exec-4] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Breakpoint is ACTIVE and will suspend execution when hit
+2026-01-14 01:11:30.353 [http-nio-8082-exec-4] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:30.358 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:30.358 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Setting breakpoint at com.jdwp.server.controller.UserController:50
+2026-01-14 01:11:30.359 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:30.362 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Waiting for class com.jdwp.server.controller.UserController to be loaded...
+2026-01-14 01:11:30.368 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓ Class found (attempt 1)
+2026-01-14 01:11:30.368 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Looking for executable code at line 50...
+2026-01-14 01:11:30.368 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓ Found executable code at line 50
+2026-01-14 01:11:30.369 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Location details:
+2026-01-14 01:11:30.369 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Class: com.jdwp.server.controller.UserController
+2026-01-14 01:11:30.369 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Method: getUserById
+2026-01-14 01:11:30.369 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Line: 50 (requested: 50)
+2026-01-14 01:11:30.371 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓✓✓ BREAKPOINT SET SUCCESSFULLY
+2026-01-14 01:11:30.372 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Breakpoint ID: com.jdwp.server.controller.UserController:50
+2026-01-14 01:11:30.372 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Actual Location: com.jdwp.server.controller.UserController:getUserById:50
+2026-01-14 01:11:30.372 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Breakpoint is ACTIVE and will suspend execution when hit
+2026-01-14 01:11:30.372 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:30.377 [http-nio-8082-exec-6] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:30.377 [http-nio-8082-exec-6] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Setting breakpoint at com.jdwp.server.controller.UserController:77
+2026-01-14 01:11:30.377 [http-nio-8082-exec-6] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:30.378 [http-nio-8082-exec-6] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Waiting for class com.jdwp.server.controller.UserController to be loaded...
+2026-01-14 01:11:30.384 [http-nio-8082-exec-6] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓ Class found (attempt 1)
+2026-01-14 01:11:30.384 [http-nio-8082-exec-6] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Looking for executable code at line 77...
+2026-01-14 01:11:30.384 [http-nio-8082-exec-6] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓ Found executable code at line 77
+2026-01-14 01:11:30.384 [http-nio-8082-exec-6] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Location details:
+2026-01-14 01:11:30.384 [http-nio-8082-exec-6] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Class: com.jdwp.server.controller.UserController
+2026-01-14 01:11:30.384 [http-nio-8082-exec-6] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Method: createUser
+2026-01-14 01:11:30.384 [http-nio-8082-exec-6] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Line: 77 (requested: 77)
+2026-01-14 01:11:30.389 [http-nio-8082-exec-6] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓✓✓ BREAKPOINT SET SUCCESSFULLY
+2026-01-14 01:11:30.389 [http-nio-8082-exec-6] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Breakpoint ID: com.jdwp.server.controller.UserController:77
+2026-01-14 01:11:30.389 [http-nio-8082-exec-6] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Actual Location: com.jdwp.server.controller.UserController:createUser:77
+2026-01-14 01:11:30.389 [http-nio-8082-exec-6] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Breakpoint is ACTIVE and will suspend execution when hit
+2026-01-14 01:11:30.389 [http-nio-8082-exec-6] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:30.392 [http-nio-8082-exec-7] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:30.392 [http-nio-8082-exec-7] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Setting breakpoint at com.jdwp.server.controller.UserController:101
+2026-01-14 01:11:30.392 [http-nio-8082-exec-7] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:30.395 [http-nio-8082-exec-7] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Waiting for class com.jdwp.server.controller.UserController to be loaded...
+2026-01-14 01:11:30.399 [http-nio-8082-exec-7] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓ Class found (attempt 1)
+2026-01-14 01:11:30.399 [http-nio-8082-exec-7] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Looking for executable code at line 101...
+2026-01-14 01:11:30.399 [http-nio-8082-exec-7] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓ Found executable code at line 101
+2026-01-14 01:11:30.399 [http-nio-8082-exec-7] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Location details:
+2026-01-14 01:11:30.399 [http-nio-8082-exec-7] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Class: com.jdwp.server.controller.UserController
+2026-01-14 01:11:30.399 [http-nio-8082-exec-7] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Method: updateUser
+2026-01-14 01:11:30.399 [http-nio-8082-exec-7] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Line: 101 (requested: 101)
+2026-01-14 01:11:30.401 [http-nio-8082-exec-7] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓✓✓ BREAKPOINT SET SUCCESSFULLY
+2026-01-14 01:11:30.401 [http-nio-8082-exec-7] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Breakpoint ID: com.jdwp.server.controller.UserController:101
+2026-01-14 01:11:30.402 [http-nio-8082-exec-7] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Actual Location: com.jdwp.server.controller.UserController:updateUser:101
+2026-01-14 01:11:30.402 [http-nio-8082-exec-7] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Breakpoint is ACTIVE and will suspend execution when hit
+2026-01-14 01:11:30.402 [http-nio-8082-exec-7] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:30.405 [http-nio-8082-exec-8] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:30.405 [http-nio-8082-exec-8] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Setting breakpoint at com.jdwp.server.controller.UserController:124
+2026-01-14 01:11:30.405 [http-nio-8082-exec-8] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:30.406 [http-nio-8082-exec-8] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Waiting for class com.jdwp.server.controller.UserController to be loaded...
+2026-01-14 01:11:30.410 [http-nio-8082-exec-8] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓ Class found (attempt 1)
+2026-01-14 01:11:30.411 [http-nio-8082-exec-8] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Looking for executable code at line 124...
+2026-01-14 01:11:30.411 [http-nio-8082-exec-8] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓ Found executable code at line 124
+2026-01-14 01:11:30.411 [http-nio-8082-exec-8] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Location details:
+2026-01-14 01:11:30.411 [http-nio-8082-exec-8] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Class: com.jdwp.server.controller.UserController
+2026-01-14 01:11:30.411 [http-nio-8082-exec-8] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Method: deleteUser
+2026-01-14 01:11:30.411 [http-nio-8082-exec-8] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Line: 124 (requested: 124)
+2026-01-14 01:11:30.413 [http-nio-8082-exec-8] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓✓✓ BREAKPOINT SET SUCCESSFULLY
+2026-01-14 01:11:30.413 [http-nio-8082-exec-8] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Breakpoint ID: com.jdwp.server.controller.UserController:124
+2026-01-14 01:11:30.413 [http-nio-8082-exec-8] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Actual Location: com.jdwp.server.controller.UserController:deleteUser:124
+2026-01-14 01:11:30.413 [http-nio-8082-exec-8] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Breakpoint is ACTIVE and will suspend execution when hit
+2026-01-14 01:11:30.413 [http-nio-8082-exec-8] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:30.416 [http-nio-8082-exec-9] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:30.416 [http-nio-8082-exec-9] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Setting breakpoint at com.jdwp.server.service.UserService:64
+2026-01-14 01:11:30.416 [http-nio-8082-exec-9] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:30.417 [http-nio-8082-exec-9] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Waiting for class com.jdwp.server.service.UserService to be loaded...
+2026-01-14 01:11:30.421 [http-nio-8082-exec-9] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓ Class found (attempt 1)
+2026-01-14 01:11:30.421 [http-nio-8082-exec-9] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Looking for executable code at line 64...
+2026-01-14 01:11:30.431 [http-nio-8082-exec-9] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓ Found executable code at line 64
+2026-01-14 01:11:30.431 [http-nio-8082-exec-9] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Location details:
+2026-01-14 01:11:30.431 [http-nio-8082-exec-9] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Class: com.jdwp.server.service.UserService
+2026-01-14 01:11:30.431 [http-nio-8082-exec-9] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Method: getAllUsers
+2026-01-14 01:11:30.431 [http-nio-8082-exec-9] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Line: 64 (requested: 64)
+2026-01-14 01:11:30.433 [http-nio-8082-exec-9] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓✓✓ BREAKPOINT SET SUCCESSFULLY
+2026-01-14 01:11:30.433 [http-nio-8082-exec-9] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Breakpoint ID: com.jdwp.server.service.UserService:64
+2026-01-14 01:11:30.434 [http-nio-8082-exec-9] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Actual Location: com.jdwp.server.service.UserService:getAllUsers:64
+2026-01-14 01:11:30.434 [http-nio-8082-exec-9] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Breakpoint is ACTIVE and will suspend execution when hit
+2026-01-14 01:11:30.434 [http-nio-8082-exec-9] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:30.437 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:30.437 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Setting breakpoint at com.jdwp.server.service.UserService:81
+2026-01-14 01:11:30.437 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:30.439 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Waiting for class com.jdwp.server.service.UserService to be loaded...
+2026-01-14 01:11:30.442 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓ Class found (attempt 1)
+2026-01-14 01:11:30.443 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Looking for executable code at line 81...
+2026-01-14 01:11:30.443 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓ Found executable code at line 81
+2026-01-14 01:11:30.443 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Location details:
+2026-01-14 01:11:30.443 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Class: com.jdwp.server.service.UserService
+2026-01-14 01:11:30.443 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Method: getUserById
+2026-01-14 01:11:30.443 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Line: 81 (requested: 81)
+2026-01-14 01:11:30.445 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓✓✓ BREAKPOINT SET SUCCESSFULLY
+2026-01-14 01:11:30.446 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Breakpoint ID: com.jdwp.server.service.UserService:81
+2026-01-14 01:11:30.446 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Actual Location: com.jdwp.server.service.UserService:getUserById:81
+2026-01-14 01:11:30.446 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Breakpoint is ACTIVE and will suspend execution when hit
+2026-01-14 01:11:30.446 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:30.448 [http-nio-8082-exec-2] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:30.449 [http-nio-8082-exec-2] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Setting breakpoint at com.jdwp.server.service.UserService:105
+2026-01-14 01:11:30.449 [http-nio-8082-exec-2] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:30.450 [http-nio-8082-exec-2] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Waiting for class com.jdwp.server.service.UserService to be loaded...
+2026-01-14 01:11:30.453 [http-nio-8082-exec-2] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓ Class found (attempt 1)
+2026-01-14 01:11:30.453 [http-nio-8082-exec-2] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Looking for executable code at line 105...
+2026-01-14 01:11:30.454 [http-nio-8082-exec-2] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓ Found executable code at line 105
+2026-01-14 01:11:30.454 [http-nio-8082-exec-2] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Location details:
+2026-01-14 01:11:30.454 [http-nio-8082-exec-2] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Class: com.jdwp.server.service.UserService
+2026-01-14 01:11:30.454 [http-nio-8082-exec-2] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Method: createUser
+2026-01-14 01:11:30.454 [http-nio-8082-exec-2] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Line: 105 (requested: 105)
+2026-01-14 01:11:30.456 [http-nio-8082-exec-2] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓✓✓ BREAKPOINT SET SUCCESSFULLY
+2026-01-14 01:11:30.457 [http-nio-8082-exec-2] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Breakpoint ID: com.jdwp.server.service.UserService:105
+2026-01-14 01:11:30.457 [http-nio-8082-exec-2] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Actual Location: com.jdwp.server.service.UserService:createUser:105
+2026-01-14 01:11:30.457 [http-nio-8082-exec-2] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Breakpoint is ACTIVE and will suspend execution when hit
+2026-01-14 01:11:30.457 [http-nio-8082-exec-2] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:30.459 [http-nio-8082-exec-1] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:30.460 [http-nio-8082-exec-1] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Setting breakpoint at com.jdwp.server.service.UserService:135
+2026-01-14 01:11:30.460 [http-nio-8082-exec-1] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:30.460 [http-nio-8082-exec-1] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Waiting for class com.jdwp.server.service.UserService to be loaded...
+2026-01-14 01:11:30.463 [http-nio-8082-exec-1] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓ Class found (attempt 1)
+2026-01-14 01:11:30.464 [http-nio-8082-exec-1] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Looking for executable code at line 135...
+2026-01-14 01:11:30.464 [http-nio-8082-exec-1] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓ Found executable code at line 135
+2026-01-14 01:11:30.464 [http-nio-8082-exec-1] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Location details:
+2026-01-14 01:11:30.464 [http-nio-8082-exec-1] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Class: com.jdwp.server.service.UserService
+2026-01-14 01:11:30.464 [http-nio-8082-exec-1] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Method: updateUser
+2026-01-14 01:11:30.464 [http-nio-8082-exec-1] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Line: 135 (requested: 135)
+2026-01-14 01:11:30.466 [http-nio-8082-exec-1] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓✓✓ BREAKPOINT SET SUCCESSFULLY
+2026-01-14 01:11:30.466 [http-nio-8082-exec-1] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Breakpoint ID: com.jdwp.server.service.UserService:135
+2026-01-14 01:11:30.466 [http-nio-8082-exec-1] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Actual Location: com.jdwp.server.service.UserService:updateUser:135
+2026-01-14 01:11:30.466 [http-nio-8082-exec-1] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Breakpoint is ACTIVE and will suspend execution when hit
+2026-01-14 01:11:30.466 [http-nio-8082-exec-1] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:30.469 [http-nio-8082-exec-3] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:30.469 [http-nio-8082-exec-3] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Setting breakpoint at com.jdwp.server.service.UserService:174
+2026-01-14 01:11:30.469 [http-nio-8082-exec-3] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:30.471 [http-nio-8082-exec-3] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Waiting for class com.jdwp.server.service.UserService to be loaded...
+2026-01-14 01:11:30.474 [http-nio-8082-exec-3] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓ Class found (attempt 1)
+2026-01-14 01:11:30.474 [http-nio-8082-exec-3] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Looking for executable code at line 174...
+2026-01-14 01:11:30.474 [http-nio-8082-exec-3] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓ Found executable code at line 174
+2026-01-14 01:11:30.474 [http-nio-8082-exec-3] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Location details:
+2026-01-14 01:11:30.475 [http-nio-8082-exec-3] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Class: com.jdwp.server.service.UserService
+2026-01-14 01:11:30.475 [http-nio-8082-exec-3] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Method: deleteUser
+2026-01-14 01:11:30.475 [http-nio-8082-exec-3] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Line: 174 (requested: 174)
+2026-01-14 01:11:30.477 [http-nio-8082-exec-3] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓✓✓ BREAKPOINT SET SUCCESSFULLY
+2026-01-14 01:11:30.477 [http-nio-8082-exec-3] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Breakpoint ID: com.jdwp.server.service.UserService:174
+2026-01-14 01:11:30.477 [http-nio-8082-exec-3] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Actual Location: com.jdwp.server.service.UserService:deleteUser:174
+2026-01-14 01:11:30.477 [http-nio-8082-exec-3] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Breakpoint is ACTIVE and will suspend execution when hit
+2026-01-14 01:11:30.477 [http-nio-8082-exec-3] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:37.376 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Getting stack frames for thread: http-nio-8081-exec-1
+2026-01-14 01:11:37.629 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #0: com.jdwp.server.controller.UserController:getAllUsers:31 (0 variables)
+2026-01-14 01:11:37.652 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #1: java.lang.invoke.DirectMethodHandle$Holder:invokeVirtual:-1 (0 variables)
+2026-01-14 01:11:37.674 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #2: java.lang.invoke.LambdaForm$MH/0x00007fb6d0094400:invoke:-1 (0 variables)
+2026-01-14 01:11:37.689 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #3: java.lang.invoke.Invokers$Holder:invokeExact_MT:-1 (0 variables)
+2026-01-14 01:11:37.708 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 4 - Variable: obj = instance of com.jdwp.server.controller.UserController(id=62)
+2026-01-14 01:11:37.723 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 4 - Variable: args = instance of java.lang.Object[0] (id=63)
+2026-01-14 01:11:37.723 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #4: jdk.internal.reflect.DirectMethodHandleAccessor:invokeImpl:153 (2 variables)
+2026-01-14 01:11:37.724 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - args = instance of java.lang.Object[0] (id=63)
+2026-01-14 01:11:37.724 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - obj = instance of com.jdwp.server.controller.UserController(id=62)
+2026-01-14 01:11:37.734 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 5 - Variable: obj = instance of com.jdwp.server.controller.UserController(id=62)
+2026-01-14 01:11:37.737 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 5 - Variable: args = instance of java.lang.Object[0] (id=63)
+2026-01-14 01:11:37.737 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #5: jdk.internal.reflect.DirectMethodHandleAccessor:invoke:103 (2 variables)
+2026-01-14 01:11:37.737 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - args = instance of java.lang.Object[0] (id=63)
+2026-01-14 01:11:37.737 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - obj = instance of com.jdwp.server.controller.UserController(id=62)
+2026-01-14 01:11:37.752 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 6 - Variable: obj = instance of com.jdwp.server.controller.UserController(id=62)
+2026-01-14 01:11:37.756 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 6 - Variable: args = instance of java.lang.Object[0] (id=63)
+2026-01-14 01:11:37.761 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 6 - Variable: callerSensitive = false
+2026-01-14 01:11:37.777 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 6 - Variable: caller = instance of java.lang.Class(reflected class=org.springframework.web.method.support.InvocableHandlerMethod, id=33)
+2026-01-14 01:11:37.785 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 6 - Variable: ma = instance of jdk.internal.reflect.DirectMethodHandleAccessor(id=66)
+2026-01-14 01:11:37.786 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #6: java.lang.reflect.Method:invoke:580 (5 variables)
+2026-01-14 01:11:37.786 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - args = instance of java.lang.Object[0] (id=63)
+2026-01-14 01:11:37.786 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - callerSensitive = false
+2026-01-14 01:11:37.786 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - caller = instance of java.lang.Class(reflected class=org.springframework.web.method.support.InvocableHandlerMethod, id=33)
+2026-01-14 01:11:37.786 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - ma = instance of jdk.internal.reflect.DirectMethodHandleAccessor(id=66)
+2026-01-14 01:11:37.786 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - obj = instance of com.jdwp.server.controller.UserController(id=62)
+2026-01-14 01:11:37.811 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 7 - Variable: args = instance of java.lang.Object[0] (id=63)
+2026-01-14 01:11:37.818 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 7 - Variable: method = instance of java.lang.reflect.Method(id=67)
+2026-01-14 01:11:37.818 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #7: org.springframework.web.method.support.InvocableHandlerMethod:doInvoke:254 (2 variables)
+2026-01-14 01:11:37.818 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - args = instance of java.lang.Object[0] (id=63)
+2026-01-14 01:11:37.818 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - method = instance of java.lang.reflect.Method(id=67)
+2026-01-14 01:11:37.841 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 8 - Variable: request = instance of org.springframework.web.context.request.ServletWebRequest(id=68)
+2026-01-14 01:11:37.858 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 8 - Variable: mavContainer = instance of org.springframework.web.method.support.ModelAndViewContainer(id=70)
+2026-01-14 01:11:37.868 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 8 - Variable: providedArgs = instance of java.lang.Object[0] (id=72)
+2026-01-14 01:11:37.872 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 8 - Variable: args = instance of java.lang.Object[0] (id=63)
+2026-01-14 01:11:37.885 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 8 - Variable: groups = instance of java.lang.Class[0] (id=73)
+2026-01-14 01:11:37.885 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #8: org.springframework.web.method.support.InvocableHandlerMethod:invokeForRequest:182 (5 variables)
+2026-01-14 01:11:37.886 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - args = instance of java.lang.Object[0] (id=63)
+2026-01-14 01:11:37.886 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - request = instance of org.springframework.web.context.request.ServletWebRequest(id=68)
+2026-01-14 01:11:37.886 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - mavContainer = instance of org.springframework.web.method.support.ModelAndViewContainer(id=70)
+2026-01-14 01:11:37.887 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - providedArgs = instance of java.lang.Object[0] (id=72)
+2026-01-14 01:11:37.887 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - groups = instance of java.lang.Class[0] (id=73)
+2026-01-14 01:11:37.932 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 9 - Variable: webRequest = instance of org.springframework.web.context.request.ServletWebRequest(id=68)
+2026-01-14 01:11:37.936 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 9 - Variable: mavContainer = instance of org.springframework.web.method.support.ModelAndViewContainer(id=70)
+2026-01-14 01:11:37.940 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 9 - Variable: providedArgs = instance of java.lang.Object[0] (id=72)
+2026-01-14 01:11:37.940 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #9: org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod:invokeAndHandle:118 (3 variables)
+2026-01-14 01:11:37.940 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - webRequest = instance of org.springframework.web.context.request.ServletWebRequest(id=68)
+2026-01-14 01:11:37.940 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - mavContainer = instance of org.springframework.web.method.support.ModelAndViewContainer(id=70)
+2026-01-14 01:11:37.941 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - providedArgs = instance of java.lang.Object[0] (id=72)
+2026-01-14 01:11:37.970 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 10 - Variable: request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:37.980 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 10 - Variable: response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:37.991 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 10 - Variable: handlerMethod = instance of org.springframework.web.method.HandlerMethod(id=79)
+2026-01-14 01:11:37.996 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 10 - Variable: webRequest = instance of org.springframework.web.context.request.ServletWebRequest(id=68)
+2026-01-14 01:11:38.007 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 10 - Variable: binderFactory = instance of org.springframework.web.servlet.mvc.method.annotation.ServletRequestDataBinderFactory(id=81)
+2026-01-14 01:11:38.019 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 10 - Variable: modelFactory = instance of org.springframework.web.method.annotation.ModelFactory(id=83)
+2026-01-14 01:11:38.031 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 10 - Variable: invocableMethod = instance of org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod(id=85)
+2026-01-14 01:11:38.035 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 10 - Variable: mavContainer = instance of org.springframework.web.method.support.ModelAndViewContainer(id=70)
+2026-01-14 01:11:38.048 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 10 - Variable: asyncWebRequest = instance of org.springframework.web.context.request.async.StandardServletAsyncWebRequest(id=86)
+2026-01-14 01:11:38.059 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 10 - Variable: asyncManager = instance of org.springframework.web.context.request.async.WebAsyncManager(id=88)
+2026-01-14 01:11:38.060 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #10: org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:invokeHandlerMethod:917 (10 variables)
+2026-01-14 01:11:38.060 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.060 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - asyncManager = instance of org.springframework.web.context.request.async.WebAsyncManager(id=88)
+2026-01-14 01:11:38.060 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - binderFactory = instance of org.springframework.web.servlet.mvc.method.annotation.ServletRequestDataBinderFactory(id=81)
+2026-01-14 01:11:38.060 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - webRequest = instance of org.springframework.web.context.request.ServletWebRequest(id=68)
+2026-01-14 01:11:38.060 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.060 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - mavContainer = instance of org.springframework.web.method.support.ModelAndViewContainer(id=70)
+2026-01-14 01:11:38.061 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - invocableMethod = instance of org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod(id=85)
+2026-01-14 01:11:38.061 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - handlerMethod = instance of org.springframework.web.method.HandlerMethod(id=79)
+2026-01-14 01:11:38.062 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - modelFactory = instance of org.springframework.web.method.annotation.ModelFactory(id=83)
+2026-01-14 01:11:38.062 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - asyncWebRequest = instance of org.springframework.web.context.request.async.StandardServletAsyncWebRequest(id=86)
+2026-01-14 01:11:38.074 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 11 - Variable: request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.078 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 11 - Variable: response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.082 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 11 - Variable: handlerMethod = instance of org.springframework.web.method.HandlerMethod(id=79)
+2026-01-14 01:11:38.083 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #11: org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter:handleInternal:829 (3 variables)
+2026-01-14 01:11:38.083 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.083 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.083 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - handlerMethod = instance of org.springframework.web.method.HandlerMethod(id=79)
+2026-01-14 01:11:38.107 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 12 - Variable: request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.111 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 12 - Variable: response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.115 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 12 - Variable: handler = instance of org.springframework.web.method.HandlerMethod(id=79)
+2026-01-14 01:11:38.116 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #12: org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter:handle:87 (3 variables)
+2026-01-14 01:11:38.116 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.116 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - handler = instance of org.springframework.web.method.HandlerMethod(id=79)
+2026-01-14 01:11:38.116 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.138 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 13 - Variable: request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.142 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 13 - Variable: response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.146 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 13 - Variable: processedRequest = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.156 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 13 - Variable: mappedHandler = instance of org.springframework.web.servlet.HandlerExecutionChain(id=90)
+2026-01-14 01:11:38.162 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 13 - Variable: multipartRequestParsed = false
+2026-01-14 01:11:38.165 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 13 - Variable: asyncManager = instance of org.springframework.web.context.request.async.WebAsyncManager(id=88)
+2026-01-14 01:11:38.170 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 13 - Variable: mv = null
+2026-01-14 01:11:38.174 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 13 - Variable: dispatchException = null
+2026-01-14 01:11:38.183 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 13 - Variable: ha = instance of org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter(id=92)
+2026-01-14 01:11:38.190 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 13 - Variable: method = "GET"
+2026-01-14 01:11:38.194 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 13 - Variable: isGet = true
+2026-01-14 01:11:38.194 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #13: org.springframework.web.servlet.DispatcherServlet:doDispatch:1089 (11 variables)
+2026-01-14 01:11:38.194 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - dispatchException = null
+2026-01-14 01:11:38.195 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.195 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - asyncManager = instance of org.springframework.web.context.request.async.WebAsyncManager(id=88)
+2026-01-14 01:11:38.195 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - isGet = true
+2026-01-14 01:11:38.195 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - method = "GET"
+2026-01-14 01:11:38.195 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - mappedHandler = instance of org.springframework.web.servlet.HandlerExecutionChain(id=90)
+2026-01-14 01:11:38.196 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.196 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - processedRequest = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.196 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - mv = null
+2026-01-14 01:11:38.196 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - ha = instance of org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter(id=92)
+2026-01-14 01:11:38.196 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - multipartRequestParsed = false
+2026-01-14 01:11:38.205 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 14 - Variable: request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.208 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 14 - Variable: response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.210 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 14 - Variable: attributesSnapshot = null
+2026-01-14 01:11:38.215 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 14 - Variable: previousRequestPath = null
+2026-01-14 01:11:38.216 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #14: org.springframework.web.servlet.DispatcherServlet:doService:979 (4 variables)
+2026-01-14 01:11:38.216 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - attributesSnapshot = null
+2026-01-14 01:11:38.216 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.216 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - previousRequestPath = null
+2026-01-14 01:11:38.216 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.233 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 15 - Variable: request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.237 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 15 - Variable: response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.240 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 15 - Variable: startTime = 1768333295827
+2026-01-14 01:11:38.242 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 15 - Variable: failureCause = null
+2026-01-14 01:11:38.254 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 15 - Variable: previousLocaleContext = instance of org.springframework.context.i18n.SimpleLocaleContext(id=94)
+2026-01-14 01:11:38.267 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 15 - Variable: localeContext = instance of org.springframework.web.servlet.DispatcherServlet$$Lambda/0x00007fb6d040f5a8(id=96)
+2026-01-14 01:11:38.277 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 15 - Variable: previousAttributes = instance of org.springframework.web.context.request.ServletRequestAttributes(id=98)
+2026-01-14 01:11:38.286 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 15 - Variable: requestAttributes = instance of org.springframework.web.context.request.ServletRequestAttributes(id=100)
+2026-01-14 01:11:38.289 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 15 - Variable: asyncManager = instance of org.springframework.web.context.request.async.WebAsyncManager(id=88)
+2026-01-14 01:11:38.290 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #15: org.springframework.web.servlet.FrameworkServlet:processRequest:1014 (9 variables)
+2026-01-14 01:11:38.290 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.290 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - previousLocaleContext = instance of org.springframework.context.i18n.SimpleLocaleContext(id=94)
+2026-01-14 01:11:38.290 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - requestAttributes = instance of org.springframework.web.context.request.ServletRequestAttributes(id=100)
+2026-01-14 01:11:38.290 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - asyncManager = instance of org.springframework.web.context.request.async.WebAsyncManager(id=88)
+2026-01-14 01:11:38.291 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - localeContext = instance of org.springframework.web.servlet.DispatcherServlet$$Lambda/0x00007fb6d040f5a8(id=96)
+2026-01-14 01:11:38.291 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - previousAttributes = instance of org.springframework.web.context.request.ServletRequestAttributes(id=98)
+2026-01-14 01:11:38.291 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.291 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - startTime = 1768333295827
+2026-01-14 01:11:38.291 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - failureCause = null
+2026-01-14 01:11:38.302 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 16 - Variable: request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.309 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 16 - Variable: response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.309 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #16: org.springframework.web.servlet.FrameworkServlet:doGet:903 (2 variables)
+2026-01-14 01:11:38.309 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.309 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.361 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 17 - Variable: req = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.366 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 17 - Variable: resp = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.370 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 17 - Variable: method = "GET"
+2026-01-14 01:11:38.374 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 17 - Variable: lastModified = -1
+2026-01-14 01:11:38.374 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #17: jakarta.servlet.http.HttpServlet:service:564 (4 variables)
+2026-01-14 01:11:38.374 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - method = "GET"
+2026-01-14 01:11:38.374 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - resp = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.374 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - lastModified = -1
+2026-01-14 01:11:38.374 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - req = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.386 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 18 - Variable: request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.390 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 18 - Variable: response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.390 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #18: org.springframework.web.servlet.FrameworkServlet:service:885 (2 variables)
+2026-01-14 01:11:38.390 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.390 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.400 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 19 - Variable: req = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.403 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 19 - Variable: res = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.408 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 19 - Variable: request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.412 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 19 - Variable: response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.413 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #19: jakarta.servlet.http.HttpServlet:service:658 (4 variables)
+2026-01-14 01:11:38.413 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - res = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.413 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.413 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.414 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - req = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.434 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 20 - Variable: request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.437 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 20 - Variable: response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.437 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #20: org.apache.catalina.core.ApplicationFilterChain:internalDoFilter:205 (2 variables)
+2026-01-14 01:11:38.437 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.437 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.449 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 21 - Variable: request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.454 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 21 - Variable: response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.454 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #21: org.apache.catalina.core.ApplicationFilterChain:doFilter:149 (2 variables)
+2026-01-14 01:11:38.455 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.455 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.475 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 22 - Variable: request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.479 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 22 - Variable: response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.487 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 22 - Variable: chain = instance of org.apache.catalina.core.ApplicationFilterChain(id=101)
+2026-01-14 01:11:38.488 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #22: org.apache.tomcat.websocket.server.WsFilter:doFilter:51 (3 variables)
+2026-01-14 01:11:38.488 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.488 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - chain = instance of org.apache.catalina.core.ApplicationFilterChain(id=101)
+2026-01-14 01:11:38.488 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.494 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 23 - Variable: request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.504 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 23 - Variable: response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.515 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 23 - Variable: filterConfig = instance of org.apache.catalina.core.ApplicationFilterConfig(id=102)
+2026-01-14 01:11:38.519 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 23 - Variable: filter = instance of org.apache.tomcat.websocket.server.WsFilter(id=104)
+2026-01-14 01:11:38.519 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #23: org.apache.catalina.core.ApplicationFilterChain:internalDoFilter:174 (4 variables)
+2026-01-14 01:11:38.520 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - filter = instance of org.apache.tomcat.websocket.server.WsFilter(id=104)
+2026-01-14 01:11:38.520 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.520 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.520 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - filterConfig = instance of org.apache.catalina.core.ApplicationFilterConfig(id=102)
+2026-01-14 01:11:38.525 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 24 - Variable: request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.526 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 24 - Variable: response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.526 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #24: org.apache.catalina.core.ApplicationFilterChain:doFilter:149 (2 variables)
+2026-01-14 01:11:38.526 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.526 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.532 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 25 - Variable: request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.534 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 25 - Variable: response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.538 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 25 - Variable: filterChain = instance of org.apache.catalina.core.ApplicationFilterChain(id=101)
+2026-01-14 01:11:38.541 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 25 - Variable: attributes = instance of org.springframework.web.context.request.ServletRequestAttributes(id=98)
+2026-01-14 01:11:38.541 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #25: org.springframework.web.filter.RequestContextFilter:doFilterInternal:100 (4 variables)
+2026-01-14 01:11:38.541 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.541 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.541 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - attributes = instance of org.springframework.web.context.request.ServletRequestAttributes(id=98)
+2026-01-14 01:11:38.541 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - filterChain = instance of org.apache.catalina.core.ApplicationFilterChain(id=101)
+2026-01-14 01:11:38.561 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 26 - Variable: request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.567 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 26 - Variable: response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.571 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 26 - Variable: filterChain = instance of org.apache.catalina.core.ApplicationFilterChain(id=101)
+2026-01-14 01:11:38.575 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 26 - Variable: httpRequest = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.581 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 26 - Variable: httpResponse = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.587 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 26 - Variable: alreadyFilteredAttributeName = "requestContextFilter.FILTERED"
+2026-01-14 01:11:38.594 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 26 - Variable: hasAlreadyFilteredAttribute = false
+2026-01-14 01:11:38.595 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #26: org.springframework.web.filter.OncePerRequestFilter:doFilter:116 (7 variables)
+2026-01-14 01:11:38.595 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.596 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.596 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - hasAlreadyFilteredAttribute = false
+2026-01-14 01:11:38.596 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - httpRequest = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.596 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - alreadyFilteredAttributeName = "requestContextFilter.FILTERED"
+2026-01-14 01:11:38.596 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - httpResponse = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.596 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - filterChain = instance of org.apache.catalina.core.ApplicationFilterChain(id=101)
+2026-01-14 01:11:38.597 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 27 - Variable: request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.599 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 27 - Variable: response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.605 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 27 - Variable: filterConfig = instance of org.apache.catalina.core.ApplicationFilterConfig(id=106)
+2026-01-14 01:11:38.617 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 27 - Variable: filter = instance of org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter(id=107)
+2026-01-14 01:11:38.617 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #27: org.apache.catalina.core.ApplicationFilterChain:internalDoFilter:174 (4 variables)
+2026-01-14 01:11:38.618 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - filter = instance of org.springframework.boot.web.servlet.filter.OrderedRequestContextFilter(id=107)
+2026-01-14 01:11:38.618 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.618 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.618 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - filterConfig = instance of org.apache.catalina.core.ApplicationFilterConfig(id=106)
+2026-01-14 01:11:38.623 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 28 - Variable: request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.626 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 28 - Variable: response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.627 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #28: org.apache.catalina.core.ApplicationFilterChain:doFilter:149 (2 variables)
+2026-01-14 01:11:38.627 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.627 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.650 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 29 - Variable: request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.653 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 29 - Variable: response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.656 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 29 - Variable: filterChain = instance of org.apache.catalina.core.ApplicationFilterChain(id=101)
+2026-01-14 01:11:38.661 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 29 - Variable: params = null
+2026-01-14 01:11:38.661 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #29: org.springframework.web.filter.FormContentFilter:doFilterInternal:93 (4 variables)
+2026-01-14 01:11:38.661 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.661 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.661 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - params = null
+2026-01-14 01:11:38.661 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - filterChain = instance of org.apache.catalina.core.ApplicationFilterChain(id=101)
+2026-01-14 01:11:38.665 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 30 - Variable: request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.672 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 30 - Variable: response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.677 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 30 - Variable: filterChain = instance of org.apache.catalina.core.ApplicationFilterChain(id=101)
+2026-01-14 01:11:38.681 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 30 - Variable: httpRequest = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.685 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 30 - Variable: httpResponse = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.692 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 30 - Variable: alreadyFilteredAttributeName = "formContentFilter.FILTERED"
+2026-01-14 01:11:38.696 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 30 - Variable: hasAlreadyFilteredAttribute = false
+2026-01-14 01:11:38.696 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #30: org.springframework.web.filter.OncePerRequestFilter:doFilter:116 (7 variables)
+2026-01-14 01:11:38.696 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.697 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.697 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - hasAlreadyFilteredAttribute = false
+2026-01-14 01:11:38.697 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - httpRequest = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.697 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - alreadyFilteredAttributeName = "formContentFilter.FILTERED"
+2026-01-14 01:11:38.697 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - httpResponse = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.697 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - filterChain = instance of org.apache.catalina.core.ApplicationFilterChain(id=101)
+2026-01-14 01:11:38.702 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 31 - Variable: request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.705 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 31 - Variable: response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.707 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 31 - Variable: filterConfig = instance of org.apache.catalina.core.ApplicationFilterConfig(id=110)
+2026-01-14 01:11:38.709 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 31 - Variable: filter = instance of org.springframework.boot.web.servlet.filter.OrderedFormContentFilter(id=111)
+2026-01-14 01:11:38.710 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #31: org.apache.catalina.core.ApplicationFilterChain:internalDoFilter:174 (4 variables)
+2026-01-14 01:11:38.710 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - filter = instance of org.springframework.boot.web.servlet.filter.OrderedFormContentFilter(id=111)
+2026-01-14 01:11:38.710 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.710 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.711 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - filterConfig = instance of org.apache.catalina.core.ApplicationFilterConfig(id=110)
+2026-01-14 01:11:38.712 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 32 - Variable: request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.713 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 32 - Variable: response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.713 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #32: org.apache.catalina.core.ApplicationFilterChain:doFilter:149 (2 variables)
+2026-01-14 01:11:38.713 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.713 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.717 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 33 - Variable: request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.717 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 33 - Variable: response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.718 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 33 - Variable: filterChain = instance of org.apache.catalina.core.ApplicationFilterChain(id=101)
+2026-01-14 01:11:38.719 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 33 - Variable: encoding = "UTF-8"
+2026-01-14 01:11:38.720 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #33: org.springframework.web.filter.CharacterEncodingFilter:doFilterInternal:201 (4 variables)
+2026-01-14 01:11:38.720 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.720 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.720 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - encoding = "UTF-8"
+2026-01-14 01:11:38.720 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - filterChain = instance of org.apache.catalina.core.ApplicationFilterChain(id=101)
+2026-01-14 01:11:38.721 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 34 - Variable: request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.721 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 34 - Variable: response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.722 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 34 - Variable: filterChain = instance of org.apache.catalina.core.ApplicationFilterChain(id=101)
+2026-01-14 01:11:38.722 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 34 - Variable: httpRequest = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.723 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 34 - Variable: httpResponse = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.724 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 34 - Variable: alreadyFilteredAttributeName = "characterEncodingFilter.FILTERED"
+2026-01-14 01:11:38.724 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 34 - Variable: hasAlreadyFilteredAttribute = false
+2026-01-14 01:11:38.725 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #34: org.springframework.web.filter.OncePerRequestFilter:doFilter:116 (7 variables)
+2026-01-14 01:11:38.725 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.725 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.725 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - hasAlreadyFilteredAttribute = false
+2026-01-14 01:11:38.725 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - httpRequest = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.725 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - alreadyFilteredAttributeName = "characterEncodingFilter.FILTERED"
+2026-01-14 01:11:38.726 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - httpResponse = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.726 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - filterChain = instance of org.apache.catalina.core.ApplicationFilterChain(id=101)
+2026-01-14 01:11:38.726 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 35 - Variable: request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.727 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 35 - Variable: response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.729 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 35 - Variable: filterConfig = instance of org.apache.catalina.core.ApplicationFilterConfig(id=115)
+2026-01-14 01:11:38.730 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 35 - Variable: filter = instance of org.springframework.boot.web.servlet.filter.OrderedCharacterEncodingFilter(id=116)
+2026-01-14 01:11:38.730 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #35: org.apache.catalina.core.ApplicationFilterChain:internalDoFilter:174 (4 variables)
+2026-01-14 01:11:38.731 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - filter = instance of org.springframework.boot.web.servlet.filter.OrderedCharacterEncodingFilter(id=116)
+2026-01-14 01:11:38.731 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.731 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.731 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - filterConfig = instance of org.apache.catalina.core.ApplicationFilterConfig(id=115)
+2026-01-14 01:11:38.731 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 36 - Variable: request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.732 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 36 - Variable: response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.732 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #36: org.apache.catalina.core.ApplicationFilterChain:doFilter:149 (2 variables)
+2026-01-14 01:11:38.732 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - request = instance of org.apache.catalina.connector.RequestFacade(id=75)
+2026-01-14 01:11:38.732 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - response = instance of org.apache.catalina.connector.ResponseFacade(id=77)
+2026-01-14 01:11:38.736 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 37 - Variable: request = instance of org.apache.catalina.connector.Request(id=118)
+2026-01-14 01:11:38.738 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 37 - Variable: response = instance of org.apache.catalina.connector.Response(id=120)
+2026-01-14 01:11:38.739 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 37 - Variable: unavailable = false
+2026-01-14 01:11:38.740 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 37 - Variable: throwable = null
+2026-01-14 01:11:38.740 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 37 - Variable: t1 = 1768333295827
+2026-01-14 01:11:38.742 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 37 - Variable: wrapper = instance of org.apache.catalina.core.StandardWrapper(id=122)
+2026-01-14 01:11:38.743 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 37 - Variable: servlet = instance of org.springframework.web.servlet.DispatcherServlet(id=124)
+2026-01-14 01:11:38.746 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 37 - Variable: context = instance of org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedContext(id=125)
+2026-01-14 01:11:38.747 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 37 - Variable: requestPathMB = instance of org.apache.tomcat.util.buf.MessageBytes(id=127)
+2026-01-14 01:11:38.749 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 37 - Variable: dispatcherType = instance of jakarta.servlet.DispatcherType(id=129)
+2026-01-14 01:11:38.755 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 37 - Variable: filterChain = instance of org.apache.catalina.core.ApplicationFilterChain(id=101)
+2026-01-14 01:11:38.767 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 37 - Variable: container = instance of org.apache.catalina.core.StandardWrapper(id=122)
+2026-01-14 01:11:38.767 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #37: org.apache.catalina.core.StandardWrapperValve:invoke:167 (12 variables)
+2026-01-14 01:11:38.767 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - container = instance of org.apache.catalina.core.StandardWrapper(id=122)
+2026-01-14 01:11:38.767 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - request = instance of org.apache.catalina.connector.Request(id=118)
+2026-01-14 01:11:38.767 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - requestPathMB = instance of org.apache.tomcat.util.buf.MessageBytes(id=127)
+2026-01-14 01:11:38.767 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - unavailable = false
+2026-01-14 01:11:38.767 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - response = instance of org.apache.catalina.connector.Response(id=120)
+2026-01-14 01:11:38.767 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - servlet = instance of org.springframework.web.servlet.DispatcherServlet(id=124)
+2026-01-14 01:11:38.767 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - throwable = null
+2026-01-14 01:11:38.767 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - dispatcherType = instance of jakarta.servlet.DispatcherType(id=129)
+2026-01-14 01:11:38.767 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - context = instance of org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedContext(id=125)
+2026-01-14 01:11:38.767 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - wrapper = instance of org.apache.catalina.core.StandardWrapper(id=122)
+2026-01-14 01:11:38.767 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - t1 = 1768333295827
+2026-01-14 01:11:38.767 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - filterChain = instance of org.apache.catalina.core.ApplicationFilterChain(id=101)
+2026-01-14 01:11:38.803 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 38 - Variable: request = instance of org.apache.catalina.connector.Request(id=118)
+2026-01-14 01:11:38.807 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 38 - Variable: response = instance of org.apache.catalina.connector.Response(id=120)
+2026-01-14 01:11:38.811 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 38 - Variable: requestPathMB = instance of org.apache.tomcat.util.buf.MessageBytes(id=127)
+2026-01-14 01:11:38.815 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 38 - Variable: wrapper = instance of org.apache.catalina.core.StandardWrapper(id=122)
+2026-01-14 01:11:38.815 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #38: org.apache.catalina.core.StandardContextValve:invoke:90 (4 variables)
+2026-01-14 01:11:38.815 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - request = instance of org.apache.catalina.connector.Request(id=118)
+2026-01-14 01:11:38.815 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - requestPathMB = instance of org.apache.tomcat.util.buf.MessageBytes(id=127)
+2026-01-14 01:11:38.815 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - response = instance of org.apache.catalina.connector.Response(id=120)
+2026-01-14 01:11:38.815 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - wrapper = instance of org.apache.catalina.core.StandardWrapper(id=122)
+2026-01-14 01:11:38.837 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 39 - Variable: request = instance of org.apache.catalina.connector.Request(id=118)
+2026-01-14 01:11:38.841 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 39 - Variable: response = instance of org.apache.catalina.connector.Response(id=120)
+2026-01-14 01:11:38.845 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 39 - Variable: authRequired = false
+2026-01-14 01:11:38.856 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 39 - Variable: realm = instance of org.apache.catalina.startup.Tomcat$SimpleRealm(id=131)
+2026-01-14 01:11:38.860 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 39 - Variable: constraints = null
+2026-01-14 01:11:38.865 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 39 - Variable: jaspicProvider = null
+2026-01-14 01:11:38.865 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #39: org.apache.catalina.authenticator.AuthenticatorBase:invoke:482 (6 variables)
+2026-01-14 01:11:38.865 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - request = instance of org.apache.catalina.connector.Request(id=118)
+2026-01-14 01:11:38.865 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - authRequired = false
+2026-01-14 01:11:38.865 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - jaspicProvider = null
+2026-01-14 01:11:38.865 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - response = instance of org.apache.catalina.connector.Response(id=120)
+2026-01-14 01:11:38.866 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - realm = instance of org.apache.catalina.startup.Tomcat$SimpleRealm(id=131)
+2026-01-14 01:11:38.866 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - constraints = null
+2026-01-14 01:11:38.882 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 40 - Variable: request = instance of org.apache.catalina.connector.Request(id=118)
+2026-01-14 01:11:38.895 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 40 - Variable: response = instance of org.apache.catalina.connector.Response(id=120)
+2026-01-14 01:11:38.899 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 40 - Variable: context = instance of org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedContext(id=125)
+2026-01-14 01:11:38.902 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 40 - Variable: asyncAtStart = false
+2026-01-14 01:11:38.903 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #40: org.apache.catalina.core.StandardHostValve:invoke:115 (4 variables)
+2026-01-14 01:11:38.903 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - request = instance of org.apache.catalina.connector.Request(id=118)
+2026-01-14 01:11:38.903 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - response = instance of org.apache.catalina.connector.Response(id=120)
+2026-01-14 01:11:38.903 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - context = instance of org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedContext(id=125)
+2026-01-14 01:11:38.904 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - asyncAtStart = false
+2026-01-14 01:11:38.924 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 41 - Variable: request = instance of org.apache.catalina.connector.Request(id=118)
+2026-01-14 01:11:38.926 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 41 - Variable: response = instance of org.apache.catalina.connector.Response(id=120)
+2026-01-14 01:11:38.926 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #41: org.apache.catalina.valves.ErrorReportValve:invoke:93 (2 variables)
+2026-01-14 01:11:38.926 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - request = instance of org.apache.catalina.connector.Request(id=118)
+2026-01-14 01:11:38.926 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - response = instance of org.apache.catalina.connector.Response(id=120)
+2026-01-14 01:11:38.950 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 42 - Variable: request = instance of org.apache.catalina.connector.Request(id=118)
+2026-01-14 01:11:38.954 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 42 - Variable: response = instance of org.apache.catalina.connector.Response(id=120)
+2026-01-14 01:11:38.965 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 42 - Variable: host = instance of org.apache.catalina.core.StandardHost(id=133)
+2026-01-14 01:11:38.965 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #42: org.apache.catalina.core.StandardEngineValve:invoke:74 (3 variables)
+2026-01-14 01:11:38.965 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - request = instance of org.apache.catalina.connector.Request(id=118)
+2026-01-14 01:11:38.966 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - response = instance of org.apache.catalina.connector.Response(id=120)
+2026-01-14 01:11:38.966 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - host = instance of org.apache.catalina.core.StandardHost(id=133)
+2026-01-14 01:11:38.996 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 43 - Variable: req = instance of org.apache.coyote.Request(id=135)
+2026-01-14 01:11:39.008 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 43 - Variable: res = instance of org.apache.coyote.Response(id=137)
+2026-01-14 01:11:39.011 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 43 - Variable: request = instance of org.apache.catalina.connector.Request(id=118)
+2026-01-14 01:11:39.019 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 43 - Variable: response = instance of org.apache.catalina.connector.Response(id=120)
+2026-01-14 01:11:39.023 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 43 - Variable: async = false
+2026-01-14 01:11:39.028 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 43 - Variable: postParseSuccess = true
+2026-01-14 01:11:39.028 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #43: org.apache.catalina.connector.CoyoteAdapter:service:340 (6 variables)
+2026-01-14 01:11:39.028 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - res = instance of org.apache.coyote.Response(id=137)
+2026-01-14 01:11:39.029 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - request = instance of org.apache.catalina.connector.Request(id=118)
+2026-01-14 01:11:39.029 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - async = false
+2026-01-14 01:11:39.029 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - response = instance of org.apache.catalina.connector.Response(id=120)
+2026-01-14 01:11:39.029 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - postParseSuccess = true
+2026-01-14 01:11:39.029 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - req = instance of org.apache.coyote.Request(id=135)
+2026-01-14 01:11:39.058 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 44 - Variable: socketWrapper = instance of org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper(id=139)
+2026-01-14 01:11:39.069 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 44 - Variable: rp = instance of org.apache.coyote.RequestInfo(id=141)
+2026-01-14 01:11:39.073 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 44 - Variable: keptAlive = true
+2026-01-14 01:11:39.082 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 44 - Variable: sendfileState = instance of org.apache.tomcat.util.net.SendfileState(id=143)
+2026-01-14 01:11:39.086 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 44 - Variable: maxKeepAliveRequests = 100
+2026-01-14 01:11:39.086 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #44: org.apache.coyote.http11.Http11Processor:service:391 (5 variables)
+2026-01-14 01:11:39.086 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - socketWrapper = instance of org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper(id=139)
+2026-01-14 01:11:39.086 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - maxKeepAliveRequests = 100
+2026-01-14 01:11:39.086 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - sendfileState = instance of org.apache.tomcat.util.net.SendfileState(id=143)
+2026-01-14 01:11:39.086 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - keptAlive = true
+2026-01-14 01:11:39.088 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - rp = instance of org.apache.coyote.RequestInfo(id=141)
+2026-01-14 01:11:39.115 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 45 - Variable: socketWrapper = instance of org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper(id=139)
+2026-01-14 01:11:39.126 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 45 - Variable: status = instance of org.apache.tomcat.util.net.SocketEvent(id=145)
+2026-01-14 01:11:39.134 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 45 - Variable: state = instance of org.apache.tomcat.util.net.AbstractEndpoint$Handler$SocketState(id=147)
+2026-01-14 01:11:39.137 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 45 - Variable: dispatches = null
+2026-01-14 01:11:39.137 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #45: org.apache.coyote.AbstractProcessorLight:process:63 (4 variables)
+2026-01-14 01:11:39.139 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - socketWrapper = instance of org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper(id=139)
+2026-01-14 01:11:39.139 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - dispatches = null
+2026-01-14 01:11:39.139 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - state = instance of org.apache.tomcat.util.net.AbstractEndpoint$Handler$SocketState(id=147)
+2026-01-14 01:11:39.139 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - status = instance of org.apache.tomcat.util.net.SocketEvent(id=145)
+2026-01-14 01:11:39.160 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 46 - Variable: wrapper = instance of org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper(id=139)
+2026-01-14 01:11:39.163 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 46 - Variable: status = instance of org.apache.tomcat.util.net.SocketEvent(id=145)
+2026-01-14 01:11:39.175 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 46 - Variable: socket = instance of org.apache.tomcat.util.net.NioChannel(id=149)
+2026-01-14 01:11:39.182 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 46 - Variable: processor = instance of org.apache.coyote.http11.Http11Processor(id=151)
+2026-01-14 01:11:39.187 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 46 - Variable: state = instance of org.apache.tomcat.util.net.AbstractEndpoint$Handler$SocketState(id=147)
+2026-01-14 01:11:39.187 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #46: org.apache.coyote.AbstractProtocol$ConnectionHandler:process:896 (5 variables)
+2026-01-14 01:11:39.187 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - wrapper = instance of org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper(id=139)
+2026-01-14 01:11:39.187 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - socket = instance of org.apache.tomcat.util.net.NioChannel(id=149)
+2026-01-14 01:11:39.187 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - state = instance of org.apache.tomcat.util.net.AbstractEndpoint$Handler$SocketState(id=147)
+2026-01-14 01:11:39.189 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - processor = instance of org.apache.coyote.http11.Http11Processor(id=151)
+2026-01-14 01:11:39.189 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - status = instance of org.apache.tomcat.util.net.SocketEvent(id=145)
+2026-01-14 01:11:39.216 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 47 - Variable: poller = instance of org.apache.tomcat.util.net.NioEndpoint$Poller(id=152)
+2026-01-14 01:11:39.219 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 47 - Variable: handshake = 0
+2026-01-14 01:11:39.228 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 47 - Variable: state = instance of org.apache.tomcat.util.net.AbstractEndpoint$Handler$SocketState(id=154)
+2026-01-14 01:11:39.228 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #47: org.apache.tomcat.util.net.NioEndpoint$SocketProcessor:doRun:1744 (3 variables)
+2026-01-14 01:11:39.228 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - poller = instance of org.apache.tomcat.util.net.NioEndpoint$Poller(id=152)
+2026-01-14 01:11:39.228 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - handshake = 0
+2026-01-14 01:11:39.228 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - state = instance of org.apache.tomcat.util.net.AbstractEndpoint$Handler$SocketState(id=154)
+2026-01-14 01:11:39.258 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 48 - Variable: lock = instance of java.util.concurrent.locks.ReentrantLock(id=155)
+2026-01-14 01:11:39.258 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #48: org.apache.tomcat.util.net.SocketProcessorBase:run:52 (1 variables)
+2026-01-14 01:11:39.258 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - lock = instance of java.util.concurrent.locks.ReentrantLock(id=155)
+2026-01-14 01:11:39.289 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 49 - Variable: w = instance of org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker(id=157)
+2026-01-14 01:11:39.302 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 49 - Variable: wt = instance of org.apache.tomcat.util.threads.TaskThread(name='http-nio-8081-exec-1', id=10)
+2026-01-14 01:11:39.310 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 49 - Variable: task = instance of org.apache.tomcat.util.net.NioEndpoint$SocketProcessor(id=159)
+2026-01-14 01:11:39.313 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 49 - Variable: completedAbruptly = true
+2026-01-14 01:11:39.313 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #49: org.apache.tomcat.util.threads.ThreadPoolExecutor:runWorker:1191 (4 variables)
+2026-01-14 01:11:39.314 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - task = instance of org.apache.tomcat.util.net.NioEndpoint$SocketProcessor(id=159)
+2026-01-14 01:11:39.314 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - completedAbruptly = true
+2026-01-14 01:11:39.314 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - w = instance of org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker(id=157)
+2026-01-14 01:11:39.314 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - wt = instance of org.apache.tomcat.util.threads.TaskThread(name='http-nio-8081-exec-1', id=10)
+2026-01-14 01:11:39.330 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #50: org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker:run:659 (0 variables)
+2026-01-14 01:11:39.337 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #51: org.apache.tomcat.util.threads.TaskThread$WrappingRunnable:run:61 (0 variables)
+2026-01-14 01:11:39.345 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 52 - Variable: bindings = instance of java.lang.Class(reflected class=java.lang.Thread, id=61)
+2026-01-14 01:11:39.346 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 52 - Variable: op = instance of org.apache.tomcat.util.threads.TaskThread$WrappingRunnable(id=160)
+2026-01-14 01:11:39.346 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #52: java.lang.Thread:runWith:1596 (2 variables)
+2026-01-14 01:11:39.347 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - op = instance of org.apache.tomcat.util.threads.TaskThread$WrappingRunnable(id=160)
+2026-01-14 01:11:39.347 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - bindings = instance of java.lang.Class(reflected class=java.lang.Thread, id=61)
+2026-01-14 01:11:39.348 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 53 - Variable: task = instance of org.apache.tomcat.util.threads.TaskThread$WrappingRunnable(id=160)
+2026-01-14 01:11:39.349 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame 53 - Variable: bindings = instance of java.lang.Class(reflected class=java.lang.Thread, id=61)
+2026-01-14 01:11:39.349 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Frame #53: java.lang.Thread:run:1583 (2 variables)
+2026-01-14 01:11:39.349 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - task = instance of org.apache.tomcat.util.threads.TaskThread$WrappingRunnable(id=160)
+2026-01-14 01:11:39.349 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]     - bindings = instance of java.lang.Class(reflected class=java.lang.Thread, id=61)
+2026-01-14 01:11:39.349 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓ Retrieved 54 stack frames for thread http-nio-8081-exec-1
+2026-01-14 01:11:39.350 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Stack trace (top to bottom):
+2026-01-14 01:11:39.350 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   [1/54] com.jdwp.server.controller.UserController:getAllUsers:31
+2026-01-14 01:11:39.350 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   [2/54] java.lang.invoke.DirectMethodHandle$Holder:invokeVirtual:-1
+2026-01-14 01:11:39.350 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   [3/54] java.lang.invoke.LambdaForm$MH/0x00007fb6d0094400:invoke:-1
+2026-01-14 01:11:39.350 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   [4/54] java.lang.invoke.Invokers$Holder:invokeExact_MT:-1
+2026-01-14 01:11:39.350 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   [5/54] jdk.internal.reflect.DirectMethodHandleAccessor:invokeImpl:153
+2026-01-14 01:11:39.350 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   [6/54] jdk.internal.reflect.DirectMethodHandleAccessor:invoke:103
+2026-01-14 01:11:39.350 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   [7/54] java.lang.reflect.Method:invoke:580
+2026-01-14 01:11:39.350 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   [8/54] org.springframework.web.method.support.InvocableHandlerMethod:doInvoke:254
+2026-01-14 01:11:39.350 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   [9/54] org.springframework.web.method.support.InvocableHandlerMethod:invokeForRequest:182
+2026-01-14 01:11:39.350 [http-nio-8082-exec-5] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   [10/54] org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod:invokeAndHandle:118
+2026-01-14 01:11:39.374 [http-nio-8082-exec-6] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:39.374 [http-nio-8082-exec-6] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] GETTING VARIABLES
+2026-01-14 01:11:39.374 [http-nio-8082-exec-6] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Thread: http-nio-8081-exec-1
+2026-01-14 01:11:39.374 [http-nio-8082-exec-6] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:39.415 [http-nio-8082-exec-6] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Current execution context:
+2026-01-14 01:11:39.416 [http-nio-8082-exec-6] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Class: com.jdwp.server.controller.UserController
+2026-01-14 01:11:39.416 [http-nio-8082-exec-6] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Method: getAllUsers
+2026-01-14 01:11:39.416 [http-nio-8082-exec-6] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Line: 31
+2026-01-14 01:11:39.416 [http-nio-8082-exec-6] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Stack depth: 54
+2026-01-14 01:11:39.416 [http-nio-8082-exec-6] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Inspecting local variables in scope:
+2026-01-14 01:11:39.416 [http-nio-8082-exec-6] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓ Retrieved 0 variables from current scope
+2026-01-14 01:11:39.416 [http-nio-8082-exec-6] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:39.424 [http-nio-8082-exec-7] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:39.424 [http-nio-8082-exec-7] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] EXECUTING STEP OVER
+2026-01-14 01:11:39.425 [http-nio-8082-exec-7] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Thread: http-nio-8081-exec-1
+2026-01-14 01:11:39.425 [http-nio-8082-exec-7] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:39.462 [http-nio-8082-exec-7] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] BEFORE STEP OVER:
+2026-01-14 01:11:39.462 [http-nio-8082-exec-7] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Location: com.jdwp.server.controller.UserController:getAllUsers:31
+2026-01-14 01:11:39.465 [http-nio-8082-exec-7] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Stack depth: 54
+2026-01-14 01:11:39.469 [http-nio-8082-exec-7] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Step request created and enabled
+2026-01-14 01:11:39.470 [http-nio-8082-exec-7] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Resuming thread to execute step...
+2026-01-14 01:11:39.474 [http-nio-8082-exec-7] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓✓✓ STEP OVER EXECUTED
+2026-01-14 01:11:39.474 [http-nio-8082-exec-7] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Thread will suspend at the next executable line in the same method
+2026-01-14 01:11:39.474 [http-nio-8082-exec-7] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:11:41.480 [http-nio-8082-exec-8] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Resuming thread: http-nio-8081-exec-1
+2026-01-14 01:11:41.528 [http-nio-8082-exec-8] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓✓✓ Thread resumed: http-nio-8081-exec-1
+2026-01-14 01:32:50.022 [main] INFO  c.j.c.JdwpDebugClientApplication - Starting JdwpDebugClientApplication v1.0.0 using Java 21.0.4 with PID 7196 (C:\Users\at381\OneDrive\Desktop\JPDA-remote-debugging\client\target\debug-client-1.0.0.jar started by at381 in C:\Users\at381\OneDrive\Desktop\JPDA-remote-debugging)
+2026-01-14 01:32:50.024 [main] INFO  c.j.c.JdwpDebugClientApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-14 01:32:50.863 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-01-14 01:32:50.869 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-01-14 01:32:50.871 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-14 01:32:50.872 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-01-14 01:32:50.903 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-14 01:32:50.903 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 819 ms
+2026-01-14 01:32:51.200 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-01-14 01:32:51.246 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path ''
+2026-01-14 01:32:51.264 [main] INFO  c.j.c.JdwpDebugClientApplication - Started JdwpDebugClientApplication in 1.722 seconds (process running for 2.134)
+2026-01-14 01:33:28.662 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-14 01:33:28.662 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-14 01:33:28.663 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-01-14 01:37:20.497 [main] INFO  c.j.c.JdwpDebugClientApplication - Starting JdwpDebugClientApplication v1.0.0 using Java 21.0.4 with PID 2192 (C:\Users\at381\OneDrive\Desktop\JPDA-remote-debugging\client\target\debug-client-1.0.0.jar started by at381 in C:\Users\at381\OneDrive\Desktop\JPDA-remote-debugging)
+2026-01-14 01:37:20.499 [main] INFO  c.j.c.JdwpDebugClientApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-14 01:37:21.338 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-01-14 01:37:21.344 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-01-14 01:37:21.347 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-14 01:37:21.347 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-01-14 01:37:21.379 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-14 01:37:21.379 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 818 ms
+2026-01-14 01:37:21.690 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-01-14 01:37:21.721 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path ''
+2026-01-14 01:37:21.739 [main] INFO  c.j.c.JdwpDebugClientApplication - Started JdwpDebugClientApplication in 1.72 seconds (process running for 2.146)
+2026-01-14 01:38:31.105 [main] INFO  c.j.c.JdwpDebugClientApplication - Starting JdwpDebugClientApplication v1.0.0 using Java 21.0.4 with PID 19280 (C:\Users\at381\OneDrive\Desktop\JPDA-remote-debugging\client\target\debug-client-1.0.0.jar started by at381 in C:\Users\at381\OneDrive\Desktop\JPDA-remote-debugging)
+2026-01-14 01:38:31.107 [main] INFO  c.j.c.JdwpDebugClientApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-14 01:38:32.144 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-01-14 01:38:32.150 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-01-14 01:38:32.150 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-14 01:38:32.150 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-01-14 01:38:32.184 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-14 01:38:32.184 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1001 ms
+2026-01-14 01:38:32.558 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-01-14 01:38:32.585 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path ''
+2026-01-14 01:38:32.602 [main] INFO  c.j.c.JdwpDebugClientApplication - Started JdwpDebugClientApplication in 2.072 seconds (process running for 2.71)
+2026-01-14 01:39:04.945 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-14 01:39:04.945 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-14 01:39:04.946 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-01-14 01:39:40.306 [main] INFO  c.j.c.JdwpDebugClientApplication - Starting JdwpDebugClientApplication v1.0.0 using Java 21.0.4 with PID 23768 (C:\Users\at381\OneDrive\Desktop\JPDA-remote-debugging\client\target\debug-client-1.0.0.jar started by at381 in C:\Users\at381\OneDrive\Desktop\JPDA-remote-debugging)
+2026-01-14 01:39:40.311 [main] INFO  c.j.c.JdwpDebugClientApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-14 01:39:41.333 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-01-14 01:39:41.342 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-01-14 01:39:41.343 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-14 01:39:41.344 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-01-14 01:39:41.380 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-14 01:39:41.380 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 972 ms
+2026-01-14 01:39:41.763 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-01-14 01:39:41.835 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path ''
+2026-01-14 01:39:41.855 [main] INFO  c.j.c.JdwpDebugClientApplication - Started JdwpDebugClientApplication in 2.168 seconds (process running for 2.873)
+2026-01-14 01:40:14.028 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-14 01:40:14.030 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-14 01:40:14.030 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-01-14 01:41:13.135 [main] INFO  c.j.c.JdwpDebugClientApplication - Starting JdwpDebugClientApplication v1.0.0 using Java 21.0.4 with PID 10260 (C:\Users\at381\OneDrive\Desktop\JPDA-remote-debugging\client\target\debug-client-1.0.0.jar started by at381 in C:\Users\at381\OneDrive\Desktop\JPDA-remote-debugging)
+2026-01-14 01:41:13.138 [main] INFO  c.j.c.JdwpDebugClientApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-14 01:41:14.255 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-01-14 01:41:14.259 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-01-14 01:41:14.267 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-14 01:41:14.267 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-01-14 01:41:14.303 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-14 01:41:14.336 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1096 ms
+2026-01-14 01:41:14.900 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-01-14 01:41:14.934 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path ''
+2026-01-14 01:41:14.957 [main] INFO  c.j.c.JdwpDebugClientApplication - Started JdwpDebugClientApplication in 2.494 seconds (process running for 3.214)
+2026-01-14 01:41:46.800 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-14 01:41:46.800 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-14 01:41:46.801 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-01-14 01:42:24.952 [main] INFO  c.j.c.JdwpDebugClientApplication - Starting JdwpDebugClientApplication v1.0.0 using Java 21.0.4 with PID 27436 (C:\Users\at381\OneDrive\Desktop\JPDA-remote-debugging\client\target\debug-client-1.0.0.jar started by at381 in C:\Users\at381\OneDrive\Desktop\JPDA-remote-debugging)
+2026-01-14 01:42:24.955 [main] INFO  c.j.c.JdwpDebugClientApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-14 01:42:26.377 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-01-14 01:42:26.386 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-01-14 01:42:26.393 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-14 01:42:26.393 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-01-14 01:42:26.432 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-14 01:42:26.433 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1374 ms
+2026-01-14 01:42:26.903 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-01-14 01:42:26.994 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path ''
+2026-01-14 01:42:27.012 [main] INFO  c.j.c.JdwpDebugClientApplication - Started JdwpDebugClientApplication in 2.717 seconds (process running for 3.327)
+2026-01-14 01:42:58.741 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-14 01:42:58.743 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-14 01:42:58.743 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-01-14 01:43:23.031 [main] INFO  c.j.c.JdwpDebugClientApplication - Starting JdwpDebugClientApplication v1.0.0 using Java 21.0.4 with PID 46980 (C:\Users\at381\OneDrive\Desktop\JPDA-remote-debugging\client\target\debug-client-1.0.0.jar started by at381 in C:\Users\at381\OneDrive\Desktop\JPDA-remote-debugging)
+2026-01-14 01:43:23.038 [main] INFO  c.j.c.JdwpDebugClientApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-14 01:43:24.320 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-01-14 01:43:24.327 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-01-14 01:43:24.328 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-14 01:43:24.328 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-01-14 01:43:24.371 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-14 01:43:24.373 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1241 ms
+2026-01-14 01:43:24.752 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-01-14 01:43:24.779 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path ''
+2026-01-14 01:43:24.796 [main] INFO  c.j.c.JdwpDebugClientApplication - Started JdwpDebugClientApplication in 2.339 seconds (process running for 3.877)
+2026-01-14 01:43:55.980 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-14 01:43:55.980 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-14 01:43:55.980 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-01-14 01:44:24.749 [main] INFO  c.j.c.JdwpDebugClientApplication - Starting JdwpDebugClientApplication v1.0.0 using Java 21.0.4 with PID 4584 (C:\Users\at381\OneDrive\Desktop\JPDA-remote-debugging\client\target\debug-client-1.0.0.jar started by at381 in C:\Users\at381\OneDrive\Desktop\JPDA-remote-debugging)
+2026-01-14 01:44:24.752 [main] INFO  c.j.c.JdwpDebugClientApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-14 01:44:26.321 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-01-14 01:44:26.325 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-01-14 01:44:26.333 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-14 01:44:26.333 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-01-14 01:44:26.375 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-14 01:44:26.375 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1544 ms
+2026-01-14 01:44:26.983 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-01-14 01:44:27.239 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path ''
+2026-01-14 01:44:27.257 [main] INFO  c.j.c.JdwpDebugClientApplication - Started JdwpDebugClientApplication in 3.258 seconds (process running for 3.958)
+2026-01-14 01:44:58.352 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-14 01:44:58.355 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-14 01:44:58.355 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-01-14 01:45:31.428 [main] INFO  c.j.c.JdwpDebugClientApplication - Starting JdwpDebugClientApplication v1.0.0 using Java 21.0.4 with PID 21644 (C:\Users\at381\OneDrive\Desktop\JPDA-remote-debugging\client\target\debug-client-1.0.0.jar started by at381 in C:\Users\at381\OneDrive\Desktop\JPDA-remote-debugging)
+2026-01-14 01:45:31.430 [main] INFO  c.j.c.JdwpDebugClientApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-14 01:45:32.390 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-01-14 01:45:32.399 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-01-14 01:45:32.399 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-14 01:45:32.399 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-01-14 01:45:32.438 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-14 01:45:32.439 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 928 ms
+2026-01-14 01:45:32.867 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-01-14 01:45:32.908 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path ''
+2026-01-14 01:45:32.939 [main] INFO  c.j.c.JdwpDebugClientApplication - Started JdwpDebugClientApplication in 2.095 seconds (process running for 2.718)
+2026-01-14 01:46:05.274 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-14 01:46:05.274 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-14 01:46:05.274 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-01-14 01:46:33.178 [main] INFO  c.j.c.JdwpDebugClientApplication - Starting JdwpDebugClientApplication v1.0.0 using Java 21.0.4 with PID 21256 (C:\Users\at381\OneDrive\Desktop\JPDA-remote-debugging\client\target\debug-client-1.0.0.jar started by at381 in C:\Users\at381\OneDrive\Desktop\JPDA-remote-debugging)
+2026-01-14 01:46:33.182 [main] INFO  c.j.c.JdwpDebugClientApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-14 01:46:34.209 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-01-14 01:46:34.215 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-01-14 01:46:34.218 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-14 01:46:34.220 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-01-14 01:46:34.253 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-14 01:46:34.253 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 974 ms
+2026-01-14 01:46:34.646 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-01-14 01:46:34.717 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path ''
+2026-01-14 01:46:34.732 [main] INFO  c.j.c.JdwpDebugClientApplication - Started JdwpDebugClientApplication in 2.092 seconds (process running for 2.742)
+2026-01-14 01:47:07.022 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-14 01:47:07.024 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-14 01:47:07.025 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-01-14 01:52:50.469 [main] INFO  c.j.c.JdwpDebugClientApplication - Starting JdwpDebugClientApplication v1.0.0 using Java 21.0.4 with PID 2640 (C:\Users\at381\OneDrive\Desktop\JPDA-remote-debugging\client\target\debug-client-1.0.0.jar started by at381 in C:\Users\at381\OneDrive\Desktop\JPDA-remote-debugging)
+2026-01-14 01:52:50.473 [main] INFO  c.j.c.JdwpDebugClientApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-14 01:52:51.731 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2026-01-14 01:52:51.739 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2026-01-14 01:52:51.743 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-01-14 01:52:51.743 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-01-14 01:52:51.796 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-01-14 01:52:51.796 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1228 ms
+2026-01-14 01:52:51.956 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-01-14 01:52:52.234 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2026-01-14 01:52:52.273 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path ''
+2026-01-14 01:52:52.300 [main] INFO  c.j.c.JdwpDebugClientApplication - Started JdwpDebugClientApplication in 2.572 seconds (process running for 3.694)
+2026-01-14 01:53:34.042 [http-nio-8082-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-14 01:53:34.042 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-01-14 01:53:34.043 [http-nio-8082-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-01-14 01:54:07.486 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:54:07.486 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Attempting to connect to JDWP server at localhost:5005
+2026-01-14 01:54:07.486 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:54:07.486 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Getting SocketAttach connector...
+2026-01-14 01:54:07.495 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Attaching to JDWP server...
+2026-01-14 01:54:07.526 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓✓✓ Successfully connected to JDWP server at localhost:5005
+2026-01-14 01:54:07.530 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] VM Description: Java Debug Interface (Reference Implementation) version 21.0 
+Java Debug Wire Protocol (Reference Implementation) version 21.0
+JVM Debug Interface version 21.0
+JVM version 21.0.9 (OpenJDK 64-Bit Server VM, mixed mode, sharing)
+2026-01-14 01:54:07.530 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:54:25.944 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:54:25.944 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Setting breakpoint at com.jdwp.server.controller.UserController:31
+2026-01-14 01:54:25.944 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - ========================================
+2026-01-14 01:54:25.949 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Waiting for class com.jdwp.server.controller.UserController to be loaded...
+2026-01-14 01:54:25.951 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓ Class found (attempt 1)
+2026-01-14 01:54:25.951 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Looking for executable code at line 31...
+2026-01-14 01:54:25.999 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓ Found executable code at line 31
+2026-01-14 01:54:26.000 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] Location details:
+2026-01-14 01:54:26.000 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Class: com.jdwp.server.controller.UserController
+2026-01-14 01:54:26.002 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Method: getAllUsers
+2026-01-14 01:54:26.002 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Line: 31 (requested: 31)
+2026-01-14 01:54:26.051 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT] ✓✓✓ BREAKPOINT SET SUCCESSFULLY
+2026-01-14 01:54:26.051 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Breakpoint ID: com.jdwp.server.controller.UserController:31
+2026-01-14 01:54:26.051 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Actual Location: com.jdwp.server.controller.UserController:getAllUsers:31
+2026-01-14 01:54:26.051 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - [JDWP CLIENT]   Breakpoint is ACTIVE and will suspend execution when hit
+2026-01-14 01:54:26.052 [http-nio-8082-exec-10] INFO  com.jdwp.client.service.JdwpService - ========================================
