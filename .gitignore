@@ -41,3 +41,8 @@ Thumbs.db
 # Docker
 *.log
 
+
+# --- security: local env & deps ---
+.env
+.env.*
+!*.env.example
